@@ -18,7 +18,7 @@ namespace DoctaCore.Feature.KeyPhraseExtraction
     {
         public RequestDocumentCollection Convert(IEnumerable<Item> obj)
         {
-            var results = new RequestDocumentCollection();
+            var results = new RequestDocumentCollection { Documents = new List<IRequestModel>()};
             foreach (var item in obj)
             {
                 var indexable = new SitecoreIndexableItem(item);
@@ -31,10 +31,10 @@ namespace DoctaCore.Feature.KeyPhraseExtraction
                     {
                         var document = new RequestDocument();
                         document.Text = searchResult.Document.Content;
-                        document.ItemId = item.ID.Guid;
+                        document.Id = item.ID.Guid;
                         document.Language = item.Language.Name;
 
-                        results.Add(document);
+                        results.Documents.Add(document);
                     }
                 }
             }

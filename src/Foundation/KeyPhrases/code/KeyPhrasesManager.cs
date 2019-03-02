@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web;
 using Sitecore.Data.Items;
 
 namespace DoctaCore.Foundation.KeyPhrases
 {
     public class KeyPhrasesManager<TRequestModelCollection, TRequestModel, TResponseModelCollection, TResponseModel> : IKeyPhrasesManager<TRequestModelCollection, TRequestModel, TResponseModelCollection, TResponseModel>
-        where TRequestModelCollection : IEnumerable<TRequestModel>
         where TResponseModelCollection : IEnumerable<TResponseModel>
     {
         protected IItemRetriever ItemRetriever { get; set; }
@@ -42,9 +43,11 @@ namespace DoctaCore.Foundation.KeyPhrases
             // serialize request models
             var requestData = RequestModelCollectionSerializer.Convert(requestModelCollection);
             // execute request & get response
-            var responseData = KeyPhrasesRequester.GetResponse(requestData);
+            Task<string> task =
+                Task.Run(async () => await KeyPhrasesRequester.GetResponse(requestData));
+            //var responseData = KeyPhrasesRequester.GetResponse(requestData);
             // parse response
-            var responseModelCollection = ResponseParser.Convert(responseData.Result);
+            var responseModelCollection = ResponseParser.Convert(task.Result);
             // handle parsed response
             ResponseHandler.DoHandleResponse(responseModelCollection);
         }

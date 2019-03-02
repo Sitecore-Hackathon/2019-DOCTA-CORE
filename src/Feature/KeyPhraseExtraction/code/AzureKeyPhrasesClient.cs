@@ -19,6 +19,8 @@ namespace DoctaCore.Feature.KeyPhraseExtraction
     {
         public async Task<string> GetResponse(string data)
         {
+            Log.Info(data, "Axure Sending");
+
             var client = new HttpClient();
             var queryString = HttpUtility.ParseQueryString(string.Empty);
 
@@ -34,8 +36,9 @@ namespace DoctaCore.Feature.KeyPhraseExtraction
             {
                 content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
                 var response = await client.PostAsync(uri, content);
+                var resultString = await response.Content.ReadAsStringAsync();
 
-                return response.Content.ReadAsStringAsync().Result;
+                return resultString;
             }
         }
     }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DoctaCore.Foundation.KeyPhrases.Models
 {
-    public interface IRequestModelCollection<out TModel> : IEnumerable<TModel>
-        where TModel : IRequestModel
+    public interface IRequestModelCollection
     {
+        List<IRequestModel> Documents { get; set; }
     }
 }
