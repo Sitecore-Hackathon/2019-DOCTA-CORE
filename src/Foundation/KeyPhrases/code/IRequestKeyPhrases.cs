@@ -8,6 +8,6 @@ namespace DoctaCore.Foundation.KeyPhrases
 {
     public interface IRequestKeyPhrases
     {
-        string GetResponse(string data);
+        Task<string> GetResponse(string data);
     }
 }
