@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Sitecore.Data.Items;
 
 namespace DoctaCore.Foundation.KeyPhrases
 {
@@ -10,6 +11,6 @@ namespace DoctaCore.Foundation.KeyPhrases
         where TRequestModelCollection : IEnumerable<TRequestModel>
         where TResponseModelCollection : IEnumerable<TResponseModel>
     {
-        void Execute();
+        void Execute(Item startItem);
     }
 }

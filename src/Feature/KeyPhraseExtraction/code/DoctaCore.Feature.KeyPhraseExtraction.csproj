@@ -207,6 +207,7 @@
     <Compile Include="Pipelines\HandleKeyPhrasesResponse\HandleKeyPhrasesResponsePipelineArgs.cs" />
     <Compile Include="Pipelines\HandleKeyPhrasesResponse\UpdateItemsWithKeyPhrases.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestDocumentTypeConverter.cs" />
     <Compile Include="ServiceConfigurator.cs" />
     <Compile Include="Shell\Framework\Commands\GetKeyPhrases.cs" />
     <Content Include="App_Config\Include\Feature\DoctaCore.Feature.KeyPhraseExtraction.Commands.config" />

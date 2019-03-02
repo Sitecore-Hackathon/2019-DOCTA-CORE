@@ -8,5 +8,8 @@ namespace DoctaCore.Feature.KeyPhraseExtraction.Models
 {
     public class RequestDocument : IRequestModel
     {
+        public Guid Id { get; set; }
+        public string Language { get; set; }
+        public string Text { get; set; }
     }
 }
