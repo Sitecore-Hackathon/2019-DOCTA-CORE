@@ -134,8 +134,8 @@
     <Compile Include="IRequestKeyPhrases.cs" />
     <Compile Include="ITypeConverter.cs" />
     <Compile Include="KeyPhrasesManager.cs" />
-    <Compile Include="Pipelines\HandleKeyPhrasesResponse\HandleKeyPhrasesResponsePipelineArgs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="App_Config\Include\Foundation\DoctaCore.Foundation.KeyPhrases.Pipelines.config" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="web.config" />
