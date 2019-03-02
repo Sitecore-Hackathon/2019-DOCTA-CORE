@@ -7,6 +7,7 @@ using DoctaCore.Feature.ContentScoring.Pipelines.ScoreContent;
 using DoctaCore.Foundation.KeyPhrases.Models;
 using DoctaCore.Foundation.KeyPhrases.Pipelines.HandleKeyPhrasesResponse;
 using Sitecore.Abstractions;
+using Sitecore.Data;
 using Sitecore.Pipelines;
 
 namespace DoctaCore.Feature.ContentScoring.Pipelines.HandleKeyPhrasesResponse
@@ -27,9 +28,11 @@ namespace DoctaCore.Feature.ContentScoring.Pipelines.HandleKeyPhrasesResponse
 
             foreach (var model in args.Collection.Documents)
             {
+
+                var id = new ID(model.ItemId);
                 var scoreContentArgs = new ScoreContentPipelineArgs()
                 {
-                    Item = database.GetItem(model.ItemId),
+                    Item = database.GetItem(id),
                     KeyPhrases = model.KeyPhrases
                 };
                 CorePipeline.Run("scoreContent", scoreContentArgs); // TODO: move this to config and inject
