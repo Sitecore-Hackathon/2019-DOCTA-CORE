@@ -390,7 +390,10 @@
     <Compile Include="Rules\Actions\MapKeyPhraseToProfileKey.cs" />
     <Compile Include="Rules\ContentScoringRuleArgs.cs" />
     <Compile Include="Rules\ContentScoringRuleContext.cs" />
-    <Content Include="App_Config\Include\Feature\DoctaCore.Feature.ContentScoring.Rules.config" />
+    <Content Include="App_Config\Include\Feature\DoctaCore.Feature.ContentScoring.Rules.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_Config\Include\Feature\DoctaCore.Feature.ContentScoring.Pipelines.config" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="web.config" />
