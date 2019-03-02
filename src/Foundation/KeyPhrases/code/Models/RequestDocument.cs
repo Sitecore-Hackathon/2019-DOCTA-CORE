@@ -1,13 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using DoctaCore.Foundation.KeyPhrases.Models;
 using Newtonsoft.Json;
 
-namespace DoctaCore.Feature.KeyPhraseExtraction.Models
+namespace DoctaCore.Foundation.KeyPhrases.Models
 {
-    public class RequestDocument : IRequestModel
+    public class RequestDocument
     {
         [JsonProperty("id")]
         public Guid Id { get; set; }

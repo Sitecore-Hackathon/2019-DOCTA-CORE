@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using DoctaCore.Feature.KeyPhraseExtraction.Models;
 using DoctaCore.Feature.KeyPhraseExtraction.Shell.Framework.Commands;
 using DoctaCore.Foundation.KeyPhrases;
 using DoctaCore.Foundation.KeyPhrases.Models;
@@ -18,7 +17,7 @@ namespace DoctaCore.Feature.KeyPhraseExtraction
     {
         public RequestDocumentCollection Convert(IEnumerable<Item> obj)
         {
-            var results = new RequestDocumentCollection { Documents = new List<IRequestModel>()};
+            var results = new RequestDocumentCollection { Documents = new List<RequestDocument>()};
             foreach (var item in obj)
             {
                 var indexable = new SitecoreIndexableItem(item);

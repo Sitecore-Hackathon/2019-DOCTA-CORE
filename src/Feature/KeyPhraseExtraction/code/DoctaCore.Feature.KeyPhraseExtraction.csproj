@@ -193,10 +193,6 @@
   <ItemGroup>
     <Compile Include="AzureKeyPhraseResponseHandler.cs" />
     <Compile Include="AzureKeyPhrasesClient.cs" />
-    <Compile Include="Models\RequestDocumentCollection.cs" />
-    <Compile Include="Models\RequestDocument.cs" />
-    <Compile Include="Models\ResponseDocument.cs" />
-    <Compile Include="Models\ResponseDocumentCollection.cs" />
     <Compile Include="Pipelines\HandleKeyPhrasesResponse\HandleKeyPhrasesResponsePipelineArgs.cs" />
     <Compile Include="Pipelines\HandleKeyPhrasesResponse\UpdateItemsWithKeyPhrases.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

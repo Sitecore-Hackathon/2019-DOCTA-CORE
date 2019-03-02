@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using DoctaCore.Feature.KeyPhraseExtraction.Models;
+using DoctaCore.Foundation.KeyPhrases.Models;
 using DoctaCore.Foundation.KeyPhrases.Pipelines.HandleKeyPhrasesResponse;
 using Sitecore.Pipelines;
 

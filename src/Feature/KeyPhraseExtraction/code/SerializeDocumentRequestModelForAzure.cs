@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 using System.Text;
 using System.Web.Script.Serialization;
-using DoctaCore.Feature.KeyPhraseExtraction.Models;
 using DoctaCore.Foundation.KeyPhrases;
+using DoctaCore.Foundation.KeyPhrases.Models;
 
 namespace DoctaCore.Feature.KeyPhraseExtraction
 {

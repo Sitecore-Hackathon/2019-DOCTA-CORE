@@ -1,6 +1,5 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
-using DoctaCore.Feature.KeyPhraseExtraction.Models;
 using DoctaCore.Foundation.KeyPhrases;
 using DoctaCore.Foundation.KeyPhrases.Models;
 using Microsoft.Extensions.DependencyInjection;

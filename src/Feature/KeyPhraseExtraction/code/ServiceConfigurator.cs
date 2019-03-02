@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using DoctaCore.Feature.KeyPhraseExtraction.Models;
 using DoctaCore.Foundation.KeyPhrases;
+using DoctaCore.Foundation.KeyPhrases.Models;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.Data.Items;
 using Sitecore.DependencyInjection;

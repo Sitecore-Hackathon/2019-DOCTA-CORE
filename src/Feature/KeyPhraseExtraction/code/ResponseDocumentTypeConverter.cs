@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using DoctaCore.Feature.KeyPhraseExtraction.Models;
 using DoctaCore.Feature.KeyPhraseExtraction.Shell.Framework.Commands;
 using DoctaCore.Foundation.KeyPhrases;
+using DoctaCore.Foundation.KeyPhrases.Models;
 using Newtonsoft.Json;
 
 namespace DoctaCore.Feature.KeyPhraseExtraction

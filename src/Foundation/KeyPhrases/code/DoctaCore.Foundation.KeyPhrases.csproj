@@ -167,10 +167,10 @@
     <Compile Include="IRequestKeyPhrases.cs" />
     <Compile Include="ITypeConverter.cs" />
     <Compile Include="KeyPhrasesManager.cs" />
-    <Compile Include="Models\IRequestModel.cs" />
-    <Compile Include="Models\IRequestModelCollection.cs" />
-    <Compile Include="Models\IResponseModel.cs" />
-    <Compile Include="Models\IResponseModelCollection.cs" />
+    <Compile Include="Models\RequestDocument.cs" />
+    <Compile Include="Models\RequestDocumentCollection.cs" />
+    <Compile Include="Models\ResponseDocument.cs" />
+    <Compile Include="Models\ResponseDocumentCollection.cs" />
     <Compile Include="Pipelines\HandleKeyPhrasesResponse\IHandleKeyPhrasesResponsePipelineArgs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceConfigurator.cs" />
