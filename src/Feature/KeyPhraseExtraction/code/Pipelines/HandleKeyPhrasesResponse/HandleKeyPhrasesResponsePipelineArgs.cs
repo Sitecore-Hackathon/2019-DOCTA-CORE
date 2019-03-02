@@ -10,6 +10,6 @@ namespace DoctaCore.Feature.KeyPhraseExtraction.Pipelines.HandleKeyPhrasesRespon
 {
     public class HandleKeyPhrasesResponsePipelineArgs : PipelineArgs, IHandleKeyPhrasesResponsePipelineArgs<ResponseDocumentCollection, ResponseDocument>
     {
-        public ResponseDocumentCollection DocumentCollection { get; set; }
+        public ResponseDocumentCollection Collection { get; set; }
     }
 }

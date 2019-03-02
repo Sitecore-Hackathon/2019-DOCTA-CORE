@@ -24,14 +24,14 @@ namespace DoctaCore.Feature.KeyPhraseExtraction.Pipelines.HandleKeyPhrasesRespon
 
         public void Process(HandleKeyPhrasesResponsePipelineArgs args)
         {
-            if (args.DocumentCollection == null || !args.DocumentCollection.Any())
+            if (args.Collection == null || !args.Collection.Any())
             {
                 return;
             }
 
             using (new BulkUpdateContext())
             {
-                foreach (var document in args.DocumentCollection)
+                foreach (var document in args.Collection)
                 {
                     // ReSharper disable once InconsistentNaming
                     var masterDB = _factory.GetDatabase("master"); // TODO: move to config and inject

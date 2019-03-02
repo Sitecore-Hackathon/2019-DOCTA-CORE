@@ -14,7 +14,7 @@ namespace DoctaCore.Feature.KeyPhraseExtraction
         {
             return new HandleKeyPhrasesResponsePipelineArgs()
             {
-                DocumentCollection = collection
+                Collection = collection
             };
         }
     }
