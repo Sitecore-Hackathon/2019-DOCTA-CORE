@@ -233,6 +233,24 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Feature\ContentScoring\code\DoctaCore.Feature.ContentScoring.csproj">
+      <Project>{22084016-014a-4170-a0a1-1cc58c8ea1ea}</Project>
+      <Name>DoctaCore.Feature.ContentScoring</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Feature\KeyPhraseExtraction\code\DoctaCore.Feature.KeyPhraseExtraction.csproj">
+      <Project>{c8227e82-ea27-44b0-80f2-041ff91f059f}</Project>
+      <Name>DoctaCore.Feature.KeyPhraseExtraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\KeyPhrases\code\DoctaCore.Foundation.KeyPhrases.csproj">
+      <Project>{eefabf5d-d727-46ee-aba7-a6b5e0bc0c26}</Project>
+      <Name>DoctaCore.Foundation.KeyPhrases</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Foundation\Rules\code\DoctaCore.Foundation.Rules.csproj">
+      <Project>{93561427-5aaa-4468-9c85-af6b5ca7d2e9}</Project>
+      <Name>DoctaCore.Foundation.Rules</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
