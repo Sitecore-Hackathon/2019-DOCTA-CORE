@@ -43,15 +43,19 @@ Once you have installed the module, there is a little bit of configuration work 
 
 ### Configure Azure Cognitive Services Connection Details
 
-In order to enable the application to connect with Azure Cognitive Services. The first thing that you will need to do is head over to [Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) and sign up or sign in. Once you do that, follow Azure's documentation for setting up an API key and a Text Analytics service in your region. Copy the endpoint URL and the API key to your configuration files as follows: 
+In order to enable the application to connect with Azure Cognitive Services. The first thing that you will need to do is head over to [Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) and sign up or sign in. Once you do that, follow Azure's documentation for setting up an API key and a Text Analytics service in your region. Copy the endpoint URL and the API key to your `DoctaCore.Feature.KeyPhraseExtraction.Settings.config` file as follows: 
 
 
 ```xml
-<?xml version="1.0"?>
-<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
-  <sitecore>
-    <!-- TODO: Add in the configuration -->
-  </sitecore>
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <sitecore>
+        <!-- DOCTA CORE SETTINGS-->
+        <settings>
+            <setting name="TextAnalyticsEndpoint" value="https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/keyPhrases"/>
+            <setting name="ApiKey" value="bb1e672daac7491091c4aabf272d2ab8"/>
+        </settings>
+    </sitecore>
 </configuration>
 ```
 
@@ -74,7 +78,14 @@ Once the resource is created, you will need the following settings in your code:
 
 ### Configure Content Search
 
-In order for Docta Score to work properly, you will need to ensure that the _content default Computed Index Field is set to persistent storage. If you are using Solr, you can do this by updating the managed-schema.xml file.  
+In order for Docta Score to work properly, you will need to ensure that the _content default Computed Index Field is set to persistent storage. If you are using Solr, you can do this by updating the managed-schema.xml file. See below for details:
+
+#### Changes to managed-schema of Sitecore's master index in Solr: (path: solr/<sitecore_master_index>/conf/managed-schema)
+1. Replace <field name="_content" type="text_general" indexed="true" stored="false"/>
+with
+<field name="_content" type="text_general" indexed="true" stored="true"/>
+2. Restart Solr
+3. Re-index conten
 
 ### Setting up the Demo Site (FOR JUDGES AND THOSE LOOKING FOR A READY-TO-RUN-DEMO)
 
