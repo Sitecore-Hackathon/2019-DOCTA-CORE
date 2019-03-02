@@ -44,7 +44,7 @@ namespace DoctaCore.Foundation.KeyPhrases
             // execute request & get response
             var responseData = KeyPhrasesRequester.GetResponse(requestData);
             // parse response
-            var responseModelCollection = ResponseParser.Convert(responseData);
+            var responseModelCollection = ResponseParser.Convert(responseData.Result);
             // handle parsed response
             ResponseHandler.DoHandleResponse(responseModelCollection);
         }

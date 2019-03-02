@@ -200,6 +200,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AzureKeyPhraseResponseHandler.cs" />
+    <Compile Include="AzureKeyPhrasesClient.cs" />
     <Compile Include="Models\RequestDocumentCollection.cs" />
     <Compile Include="Models\RequestDocument.cs" />
     <Compile Include="Models\ResponseDocument.cs" />
