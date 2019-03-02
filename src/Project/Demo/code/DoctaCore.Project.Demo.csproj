@@ -212,6 +212,7 @@
     <Content Include="App_Config\Include\Glass\Glass.Mapper.Sc.config" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <Content Include="Assets\styles.css" />
     <Content Include="Views\Layout.cshtml" />
     <Content Include="Views\Web.config">
       <SubType>Designer</SubType>

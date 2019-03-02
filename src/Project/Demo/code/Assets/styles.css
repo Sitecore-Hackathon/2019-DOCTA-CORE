@@ -1,0 +1,14 @@
+﻿.content-card {
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.content-card .card {
+    background-color: #8B8989;
+    border-radius: 0;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border-color: #ffffff;
+}

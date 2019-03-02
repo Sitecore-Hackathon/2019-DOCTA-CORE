@@ -2,9 +2,15 @@
 @using Glass.Mapper
 @inherits Glass.Mapper.Sc.Web.Mvc.GlassView<DoctaCore.Project.Demo.Base_Page>
 
-<ul>
+<div class="row">
     @foreach (var page in Model.Featured_Contents)
     {
-        <li><a href="@page.Url">@page.Title</a></li>
+        <div class="col-md-4 align-self-center">
+            <div class="content-card">
+                <div class="card card-body h-100 justify-content-center">
+                    <a class="btn btn-primary" href="@page.Url">@page.Title</a>
+                </div>
+            </div>
+        </div>
     }
-</ul>
+</div>
