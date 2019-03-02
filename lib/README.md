@@ -7,3 +7,7 @@ Please use Nuget reference where the package is available. If certain DLLs are n
 - Library.License.xml
 
 Do not include files which are subject to any licensing or distribution restrictions.
+
+-----------------------------------------
+Replace managed-schema for master index using the one from libs/solr/sitecore_master_index/conf/managed-schema
+

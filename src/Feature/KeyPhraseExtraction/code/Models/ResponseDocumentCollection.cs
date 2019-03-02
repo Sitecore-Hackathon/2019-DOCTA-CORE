@@ -9,5 +9,6 @@ namespace DoctaCore.Feature.KeyPhraseExtraction.Models
 {
     public class ResponseDocumentCollection : List<ResponseDocument>, IResponseModelCollection<ResponseDocument>
     {
+        public List<string> Error { get; set; }
     }
 }
