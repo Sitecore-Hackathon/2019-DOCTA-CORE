@@ -55,25 +55,35 @@ namespace DoctaCore.Feature.KeyPhraseExtraction.Shell.Framework.Commands
                 }
                 else
                 {
-                    using (IProviderSearchContext searchContext = ContentSearchManager.GetIndex("sitecore_master_index")
-                        .CreateSearchContext(SearchSecurityOptions.DisableSecurityCheck))
-                    {
-                        var resultItem = searchContext.GetQueryable<SearchResultItem>()
-                            .Where(x => x.ItemId == contextItem.ID).GetResults();
+                    inputDocumentsList = AddItemToDocumentList(contextItemChild, inputDocumentsList);
+                    return inputDocumentsList;
+                }
+            }
 
-                        if (resultItem.Hits.Any())
+            inputDocumentsList = AddItemToDocumentList(contextItem, inputDocumentsList);
+            return inputDocumentsList;
+        }
+
+        private InputDocumentsList AddItemToDocumentList(Item contextItem, InputDocumentsList inputDocumentsList)
+        {
+            using (IProviderSearchContext searchContext = ContentSearchManager.GetIndex("sitecore_master_index")
+                .CreateSearchContext(SearchSecurityOptions.DisableSecurityCheck))
+            {
+                var resultItem = searchContext.GetQueryable<SearchResultItem>()
+                    .Where(x => x.ItemId == contextItem.ID).GetResults();
+
+                if (resultItem.Hits.Any())
+                {
+                    var text = resultItem.Hits.First().Document.Content;
+                    if (!text.IsNullOrEmpty())
+                    {
+                        inputDocumentsList.Documents.Add(new InputDocument
                         {
-                            var text = resultItem.Hits.First().Document.Content;
-                            if (!text.IsNullOrEmpty())
-                            {
-                                inputDocumentsList.Documents.Add(new InputDocument
-                                {
-                                    Language = contextItemChild.Language.Name,
-                                    Id = contextItemChild.ID.ToShortID().ToString(),
-                                    Text = text
-                                });
-                            }
-                        }
+                            Language = contextItem.Language.Name,
+                            Id = contextItem.ID.ToShortID().ToString(),
+                            Text = text
+                        });
+                        return inputDocumentsList;
                     }
                 }
             }
