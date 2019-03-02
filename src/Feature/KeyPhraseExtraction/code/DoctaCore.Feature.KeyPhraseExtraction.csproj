@@ -200,9 +200,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AzureKeyPhraseResponseHandler.cs" />
+    <Compile Include="Models\RequestDocumentCollection.cs" />
+    <Compile Include="Models\RequestDocument.cs" />
+    <Compile Include="Models\ResponseDocument.cs" />
+    <Compile Include="Models\ResponseDocumentCollection.cs" />
+    <Compile Include="Pipelines\HandleKeyPhrasesResponse\HandleKeyPhrasesResponsePipelineArgs.cs" />
+    <Compile Include="Pipelines\HandleKeyPhrasesResponse\UpdateItemsWithKeyPhrases.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceConfigurator.cs" />
     <Compile Include="Shell\Framework\Commands\GetKeyPhrases.cs" />
-    <Content Include="App_Config\Include\Feature\KeyPhraseExtraction\DoctaCore.Feature.KeyPhraseExtraction.Commands.config" />
+    <Content Include="App_Config\Include\Feature\DoctaCore.Feature.KeyPhraseExtraction.Commands.config" />
+    <Content Include="App_Config\Include\Feature\DoctaCore.Feature.KeyPhrasesExtraction.Pipelines.config" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="web.config">
