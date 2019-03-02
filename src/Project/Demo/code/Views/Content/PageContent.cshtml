@@ -1,0 +1,13 @@
+﻿@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<DoctaCore.Project.Demo.Article>
+
+<h1>@Editable(x => x.Title)</h1>
+
+@if (IsInEditingMode || !string.IsNullOrEmpty(Model.Introduction))
+{
+    @Editable(x => x.Introduction)
+}
+
+@if (IsInEditingMode || !string.IsNullOrEmpty(Model.Main_Content))
+{
+    @Editable(x => x.Main_Content)
+}

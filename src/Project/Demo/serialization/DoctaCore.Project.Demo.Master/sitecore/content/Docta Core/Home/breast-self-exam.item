@@ -1,0 +1,78 @@
+----item----
+version: 1
+id: {2313822B-F570-4097-84A3-C16BB5C94BD8}
+database: master
+path: /sitecore/content/Docta Core/Home/breast-self-exam
+parent: {37F0A889-EE32-41F8-90AC-339934022131}
+name: breast-self-exam
+master: {00000000-0000-0000-0000-000000000000}
+template: {0E7ADD70-1756-45B7-B0A3-95AF072FC68F}
+templatekey: Article
+created: 20190302T125335Z
+
+----version----
+language: en
+version: 1
+revision: c2118cef-732d-452d-9959-667debcc0e14
+
+----field----
+field: {714309BB-79C4-4491-A709-CD790D4B59FB}
+name: Title
+key: title
+content-length: 16
+
+Breast Self-Exam
+----field----
+field: {07B7AB11-8EDF-4EDB-A1CC-7C981B2DEE04}
+name: Main Content
+key: main content
+content-length: 3620
+
+<ul>
+    <li>A breast self-exam is a woman's examination of her breasts for any changes or abnormalities.</li>
+    <li>Although some women prefer to do breast self-exams, their value in detecting early cancers and in saving lives from breast cancer is controversial. For this reason, many medical organizations do not specifically recommend that women do breast self-exams.</li>
+    <li>Mammography is the best way to detect early breast cancers.</li>
+    <li>Breast self-exam is an option for women who choose to perform this exam.</li>
+    <li>Breast self-exam involves looking for both changes in appearance and changes in feel of the breasts.</li>
+    <li>Any changes noticed on breast self-exam should be discussed with a doctor. Most breast lumps are benign (are not cancerous).</li>
+</ul>
+<h2>What is a breast self-exam?</h2>
+<p>A breast self-exam is a woman's examination of her own breasts. Breast self-exams were formerly encouraged to help women detect breast cancer, but experts and medical organizations do not agree about whether this is necessary or helps save lives. Many women feel comfortable doing breast self-exams as a way to monitor their own health.</p>
+<h2>Is a breast self-exam necessary?</h2>
+<p>As mentioned, agencies that issue health practice guidelines do not agree on whether doing breast self-exams are helpful in terms of cancer detection or saving lives from cancer. The best way to detect breast cancer is by having regular mammograms combined with a breast examination by a health care professional.</p>
+
+<p>According to the American Cancer Society, breast self exam is an option for women starting in their 20s, but women should be informed about the limitations as well as the benefits of this practice. According to the ACS, "Research has shown that BSE plays a small role in finding breast cancer compared with finding a breast lump by chance or simply being aware of what is normal for each woman."</p>
+<h2>How should one do a breast self-exam?</h2>
+<p>If you choose to do breast self-exams, your doctor can help show you the best technique. Many women find it convenient to do the exam while bathing or showering. The best time to do the exam is 3 to 5 days after the start of the menstrual period, since the breasts are not as tender or lumpy at this time of the cycle. Women who no longer have menstrual periods should do the exam about the same time each month.</p>
+<p>
+Part of a breast self-exam involves examination of the appearance of the breasts in a mirror. For this step, it is best to stand in front of a mirror and examine your breasts in different positions: with your arms relaxed by your side, with your hands pressed down on your hips, leaning forward with chest muscles tightened, and with hands behind the head and chest muscles tightened. Turning from side to side may be helpful to view all angles. Look for any changes like sores on the skin, dimpling or puckering of the skin, or changes in skin color. Look for discharge or changes in the skin of the nipple areas, as well. Don't forget to examine the skin underneath the breasts.</p>
+<p>
+Next, use the flat part of the fingers to feel your breasts, following an up and down or circular motion until you have examined all breast tissue from collarbone to the lower border of the breasts. Examine the armpit areas too since these may contain breast tissue. Look for lumps or irregularities in density or any changes since your last exam. Feel beneath the nipple for any changes. It's best to do this both standing (with your hand on your hip; use the opposite hand to do the exam) and while lying down.</p>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T125335Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+c2118cef-732d-452d-9959-667debcc0e14
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T125659Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

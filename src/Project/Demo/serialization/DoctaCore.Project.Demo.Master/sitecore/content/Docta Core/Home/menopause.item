@@ -1,0 +1,102 @@
+----item----
+version: 1
+id: {B84037AA-CEF0-4946-AD9D-188BB8786D4A}
+database: master
+path: /sitecore/content/Docta Core/Home/menopause
+parent: {37F0A889-EE32-41F8-90AC-339934022131}
+name: menopause
+master: {00000000-0000-0000-0000-000000000000}
+template: {0E7ADD70-1756-45B7-B0A3-95AF072FC68F}
+templatekey: Article
+created: 20190302T072200Z
+
+----field----
+field: {B0A67B2A-8B07-4E0B-8809-69F751709806}
+name: __Tracking
+key: __tracking
+content-length: 260
+
+<tracking>
+  <profile id="24dff2cf-b30a-4b75-8967-2fe3ded82271" name="Focus">
+    <key name="Background" value="4" />
+    <key name="Practical" value="2" />
+    <key name="Process" value="0" />
+    <key name="Scope" value="0" />
+  </profile>
+</tracking>
+----version----
+language: en
+version: 1
+revision: ed54a9e3-62e3-45d9-a04f-8cd0c242ec83
+
+----field----
+field: {714309BB-79C4-4491-A709-CD790D4B59FB}
+name: Title
+key: title
+content-length: 9
+
+Menopause
+----field----
+field: {07B7AB11-8EDF-4EDB-A1CC-7C981B2DEE04}
+name: Main Content
+key: main content
+content-length: 1058
+
+<ul><li>Menopause is defined as the absence of menstrual periods for 12 months. It is the time in a woman's life when the function of the ovaries ceases.</li>
+<li>The process of menopause does not occur overnight, but rather is a gradual process. This so-called perimenopausal transition period is a different experience for each woman..</li>
+<li>The average age of menopause is 51 years old, but menopause may occur as early as the 30s or as late as the 60s. There is no reliable lab test to predict when a woman will experience menopause..</li>
+<li>The age at which a woman starts having menstrual periods is not related to the age of menopause onset..</li>
+<li>Symptoms of menopause can include abnormal vaginal bleeding, hot flashes, vaginal and urinary symptoms, and mood changes..</li>
+<li>Complications that women may develop after menopause include osteoporosis and heart disease..</li>
+<li>Treatments for menopause are customized for each woman..</li>
+<li>Treatments are directed toward alleviating uncomfortable or distressing symptoms..</li>
+</ul>
+----field----
+field: {EAFE0951-3B1F-4689-81B3-C47A4FEDBF23}
+name: Featured Content
+key: featured content
+content-length: 0
+
+
+----field----
+field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
+name: __Owner
+key: __owner
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T072201Z
+----field----
+field: {5DD74568-4D4B-44C1-B513-0AF5F4CDA34F}
+name: __Created by
+key: __created by
+content-length: 14
+
+sitecore\Admin
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ed54a9e3-62e3-45d9-a04f-8cd0c242ec83
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T100628Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
