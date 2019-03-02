@@ -6,12 +6,6 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>7958d375-57f4-4d54-9208-8d1cf6a5f72d</ProjectGuid>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
-    <SourceWebPhysicalPath>
-    </SourceWebPhysicalPath>
-    <SourceWebProject>
-    </SourceWebProject>
-    <SourceWebVirtualPath>
-    </SourceWebVirtualPath>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <EnableUpdateable>true</EnableUpdateable>
     <UseMerge>true</UseMerge>
@@ -22,6 +16,9 @@
     <AssemblyName>DoctaCore.Project.Demo.Content</AssemblyName>
     <Name>DoctaCore.Project.Demo.Content</Name>
     <RootNamespace>DoctaCore.Project.Demo.Content</RootNamespace>
+    <ManageRoles>False</ManageRoles>
+    <SitecoreDatabase>master</SitecoreDatabase>
+    <AssemblyStatus>Exclude</AssemblyStatus>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -94,6 +91,46 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+  </ItemGroup>
+  <ItemGroup>
+    <SourceWebProjects Include="{22084016-014a-4170-a0a1-1cc58c8ea1ea}|src\Feature\ContentScoring\code\DoctaCore.Feature.ContentScoring.csproj">
+      <SourceWebPhysicalPath>..\..\..\..\Feature\ContentScoring\code</SourceWebPhysicalPath>
+      <SourceWebVirtualPath>/DoctaCore.Feature.ContentScoring.csproj</SourceWebVirtualPath>
+      <SourceWebProjectId>22084016-014a-4170-a0a1-1cc58c8ea1ea</SourceWebProjectId>
+    </SourceWebProjects>
+    <SourceWebProjects Include="{93561427-5aaa-4468-9c85-af6b5ca7d2e9}|src\Foundation\Rules\code\DoctaCore.Foundation.Rules.csproj">
+      <SourceWebPhysicalPath>..\..\..\..\Foundation\Rules\code</SourceWebPhysicalPath>
+      <SourceWebVirtualPath>/DoctaCore.Foundation.Rules.csproj</SourceWebVirtualPath>
+      <SourceWebProjectId>93561427-5aaa-4468-9c85-af6b5ca7d2e9</SourceWebProjectId>
+    </SourceWebProjects>
+    <SourceWebProjects Include="{c8227e82-ea27-44b0-80f2-041ff91f059f}|src\Feature\KeyPhraseExtraction\code\DoctaCore.Feature.KeyPhraseExtraction.csproj">
+      <SourceWebPhysicalPath>..\..\..\..\Feature\KeyPhraseExtraction\code</SourceWebPhysicalPath>
+      <SourceWebVirtualPath>/DoctaCore.Feature.KeyPhraseExtraction.csproj</SourceWebVirtualPath>
+      <SourceWebProjectId>c8227e82-ea27-44b0-80f2-041ff91f059f</SourceWebProjectId>
+    </SourceWebProjects>
+    <SourceWebProjects Include="{eefabf5d-d727-46ee-aba7-a6b5e0bc0c26}|src\Foundation\KeyPhrases\code\DoctaCore.Foundation.KeyPhrases.csproj">
+      <SourceWebPhysicalPath>..\..\..\..\Foundation\KeyPhrases\code</SourceWebPhysicalPath>
+      <SourceWebVirtualPath>/DoctaCore.Foundation.KeyPhrases.csproj</SourceWebVirtualPath>
+      <SourceWebProjectId>eefabf5d-d727-46ee-aba7-a6b5e0bc0c26</SourceWebProjectId>
+    </SourceWebProjects>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Feature\ContentScoring\code\DoctaCore.Feature.ContentScoring.csproj">
+      <Project>{22084016-014a-4170-a0a1-1cc58c8ea1ea}</Project>
+      <Name>DoctaCore.Feature.ContentScoring</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Feature\KeyPhraseExtraction\code\DoctaCore.Feature.KeyPhraseExtraction.csproj">
+      <Project>{c8227e82-ea27-44b0-80f2-041ff91f059f}</Project>
+      <Name>DoctaCore.Feature.KeyPhraseExtraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Foundation\KeyPhrases\code\DoctaCore.Foundation.KeyPhrases.csproj">
+      <Project>{eefabf5d-d727-46ee-aba7-a6b5e0bc0c26}</Project>
+      <Name>DoctaCore.Foundation.KeyPhrases</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Foundation\Rules\code\DoctaCore.Foundation.Rules.csproj">
+      <Project>{93561427-5aaa-4468-9c85-af6b5ca7d2e9}</Project>
+      <Name>DoctaCore.Foundation.Rules</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>
