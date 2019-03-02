@@ -175,6 +175,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceConfigurator.cs" />
     <Content Include="App_Config\Include\Foundation\DoctaCore.Foundation.KeyPhrases.Pipelines.config" />
+    <Content Include="App_Config\Include\Foundation\DoctaCore.Foundation.KeyPhrases.ServiceConfiguration.config" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Compile Include="Models\ExtendedSearchResultItem.cs" />

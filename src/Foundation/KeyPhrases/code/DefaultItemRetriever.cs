@@ -25,7 +25,8 @@ namespace DoctaCore.Foundation.KeyPhrases
             }
 
             var items = new List<Item> {startItem};
-            using (var searchContext = ContentSearchManager.GetIndex((IIndexable)startItem)
+            var indexable = new SitecoreIndexableItem(startItem);
+            using (var searchContext = ContentSearchManager.GetIndex(indexable)
                 .CreateSearchContext(SearchSecurityOptions.DisableSecurityCheck))
             {
                 // Filter the search by the start item language and only return results that are the latest version.

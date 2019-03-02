@@ -207,6 +207,7 @@
     <Compile Include="Shell\Framework\Commands\GetKeyPhrases.cs" />
     <Content Include="App_Config\Include\Feature\DoctaCore.Feature.KeyPhraseExtraction.Commands.config" />
     <Content Include="App_Config\Include\Feature\DoctaCore.Feature.KeyPhrasesExtraction.Pipelines.config" />
+    <Content Include="App_Config\Include\Feature\DoctaCore.Foundation.KeyPhrases.ServiceConfiguration.config" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="web.config">

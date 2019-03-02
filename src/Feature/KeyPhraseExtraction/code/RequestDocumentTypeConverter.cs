@@ -18,11 +18,12 @@ namespace DoctaCore.Feature.KeyPhraseExtraction
     {
         public RequestDocumentCollection Convert(IEnumerable<Item> obj)
         {
-            var results = new List<RequestDocument>();
+            var results = new RequestDocumentCollection();
             foreach (var item in obj)
             {
-                using (var searchContext = ContentSearchManager.GetIndex((IIndexable)item)
-                    .CreateSearchContext(SearchSecurityOptions.DisableSecurityCheck))
+                var indexable = new SitecoreIndexableItem(item);
+                using (var searchContext = ContentSearchManager.GetIndex(indexable)
+                        .CreateSearchContext(SearchSecurityOptions.DisableSecurityCheck))
                 {
                     var searchResult = searchContext.GetQueryable<ExtendedSearchResultItem>()
                         .Where(x => x.ItemId == item.ID && x.Language == item.Language.Name && x.LatestVersion).GetResults().FirstOrDefault();
@@ -38,7 +39,7 @@ namespace DoctaCore.Feature.KeyPhraseExtraction
                 }
             }
 
-            return (RequestDocumentCollection)results;
+            return results;
         }
     }
 }
