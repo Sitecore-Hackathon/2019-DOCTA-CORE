@@ -55,6 +55,10 @@ In order to enable the application to connect with Azure Cognitive Services. The
 
 In order for Docta Score to work properly, you will need to ensure that the _content default Computed Index Field is set to persistent storage. If you are using Solr, you can do this by updating the managed-schema.xml file.  
 
+### Setting up the Demo Site (FOR JUDGES AND THOSE LOOKING FOR A READY-TO-RUN-DEMO)
+
+In addition to installing the Docta Score Sitecore package, be sure to also install the Demo site Sitecore package, which can be found in the same folder as the Docta Score Sitecore package. 
+
 ## Usage
 
 There are a few steps to go through in order to use and maintain your mappings for Docta Score.
