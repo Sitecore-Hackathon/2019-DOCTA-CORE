@@ -1,0 +1,84 @@
+----item----
+version: 1
+id: {F1B855BF-17CB-4BC9-AC47-3C89F00A400C}
+database: master
+path: /sitecore/content/Docta Core/Home/signs-of-cancer-in-women
+parent: {37F0A889-EE32-41F8-90AC-339934022131}
+name: signs-of-cancer-in-women
+master: {00000000-0000-0000-0000-000000000000}
+template: {0E7ADD70-1756-45B7-B0A3-95AF072FC68F}
+templatekey: Article
+created: 20190302T130701Z
+
+----version----
+language: en
+version: 1
+revision: 78fdb144-e64c-4dc8-a350-5957543760ac
+
+----field----
+field: {714309BB-79C4-4491-A709-CD790D4B59FB}
+name: Title
+key: title
+content-length: 51
+
+Signs of Cancer in Women: Symptoms You Can't Ignore
+----field----
+field: {66F51940-5F6F-404B-8DD9-81DEE8E6BB07}
+name: Introduction
+key: introduction
+content-length: 597
+
+<p>Women are usually more diligent than men when it comes to their own health care. But many women ignore symptoms that may be indicative of cancer. If a new health problem arises please get it checked out. The sooner a problem is explained the sooner treatment can be begun. Many forms of cancer can be cured if they are found early.</p>
+
+<p>The following slides discuss some of the symptoms women should talk to their doctor about if they experience them. Just because a woman has these symptoms does not mean she has cancer, but it is important to have a doctor's evaluation to rule it out.</p>
+----field----
+field: {07B7AB11-8EDF-4EDB-A1CC-7C981B2DEE04}
+name: Main Content
+key: main content
+content-length: 2290
+
+<h2>No.1 - Unexplained Weight Loss</h2>
+<p>Unexplained weight loss could be a symptom of a cancer. Many women would be pleased to lose weight without trying, but when a woman loses weight without diet or exercise this should be checked out. Cancer cells often use much of the body's energy supply, which can lead to this weight loss. A doctor will run tests to rule out cancer and determine if the weight loss is caused by another condition such as an overactive thyroid.</p>
+<h2>No. 2 - Bloating</h2>
+<p>Many women experience bloating as a normal part of their monthly cycle. But if bloating includes every day and lasts for several weeks, consult your doctor. Signs of ovarian cancer include bloating and other digestive issues, abdominal or pelvic pain, feeling full quickly even if you have not eaten much, and urinary urgency. Your doctor can order a CT scan and perform blood tests to aid in diagnosis.</p>
+<h2>No 3. - Breast Changes</h2>
+<p>
+
+Women are told to do regular breast self-exams and check for lumps, but there are other breast changes to look out for. Symptoms of inflammatory breast cancer include redness and thickening of the skin on the breast. Many women have lumps that come and go during their cycle. A new lump that does not go away for about a month, but instead is slowly enlarging needs to be checked out right away. Other breast changes might include a rash that persists for weeks, changes in the nipple, or discharge when you are not breastfeeding. Tell your doctor about any breast changes you notice. Your doctor will examine your breasts and may order tests such as a mammogram, ultrasound, MRI, and biopsy.</p>
+<h2>No. 4 - Between-Period Bleeding or Other Unusual Bleeding</h2>
+<p>If you normally have regular periods, bleeding in between periods is a cause for concern that needs to be checked. So does bleeding after menopause. An early sign and symptom of endometrial cancer is often spotting between periods.</p>
+
+<p>Women also tend to ignore bleeding from the gastrointestinal (GI) tract, which can be mistaken for menstrual bleeding. GI bleeding may be a sign of colorectal cancer.</p>
+
+<p>Tell your doctor about either of these types of bleeding. Your doctor may order an ultrasound or biopsy to check for endometrial or colorectal cancers.</p>
+
+
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T130701Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+78fdb144-e64c-4dc8-a350-5957543760ac
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T131057Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

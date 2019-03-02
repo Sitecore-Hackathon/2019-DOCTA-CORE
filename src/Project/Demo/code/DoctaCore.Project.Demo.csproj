@@ -212,13 +212,16 @@
     <Content Include="App_Config\Include\Glass\Glass.Mapper.Sc.config" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
+    <Content Include="Assets\styles.css" />
     <Content Include="Views\Layout.cshtml" />
     <Content Include="Views\Web.config">
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\Content\PageContent.cshtml" />
     <Content Include="Views\Content\ContentList.cshtml" />
-    <Content Include="web.config" />
+    <Content Include="web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
