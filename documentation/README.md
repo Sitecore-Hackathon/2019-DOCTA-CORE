@@ -57,6 +57,7 @@ In order for Docta Score to work properly, you will need to ensure that the _con
 
 ## Usage
 
+There are a few steps to go through in order to use and maintain your mappings for Docta Score.
 
 ### Configuring the Mapping Rules (For Authors and Developers)
 
@@ -85,6 +86,14 @@ Once you've filled out all of the fields, click the "OK" button to close the win
 One of the great things about Docta Score is that you can add as many mappings as you want to your rule! 
 
 In order to add a new mapping, click the "Edit rule" link to open the Rule Editor. Once open, in the right-hand pane at the top of the modal window you will see "Actions" available for selection. One of these actions will be the mapping rule, and will read "map the specific phrase of the content's key phrases...". Click on this rule action to add it to your rule, then follow the procedure outlined above in "Filling in the Mapping" to finish adding your new mapping. 
+
+### Running Docta Score
+
+Once your mapping rules are all set up, log into Sitecore open up the Content Editor. Navigate in the tree to the top level (root) item that you wish to score content for, and click the "Analyze" tab at the top. In the "Attributes" section of the ribbon you will see a button with a "spider-web-like" icon, named "Score Content". Click on this item to start the process. 
+
+**IMPORTANT:** It was our intent to add a <saveItem> processor for this item, as well to eliminate the need for manual execution steps. However, given the limited time that we have during hackathon to complete our module, we decided to keep the manual execution for now, and add automated execution to our backlog. 
+
+
 
 
 ## Video
