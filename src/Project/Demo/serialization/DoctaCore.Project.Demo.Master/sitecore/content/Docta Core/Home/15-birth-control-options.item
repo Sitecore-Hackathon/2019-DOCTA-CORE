@@ -1,0 +1,69 @@
+----item----
+version: 1
+id: {3B7BF7AD-69B0-4613-B4B2-6984B55E82E7}
+database: master
+path: /sitecore/content/Docta Core/Home/15-birth-control-options
+parent: {37F0A889-EE32-41F8-90AC-339934022131}
+name: 15-birth-control-options
+master: {00000000-0000-0000-0000-000000000000}
+template: {0E7ADD70-1756-45B7-B0A3-95AF072FC68F}
+templatekey: Article
+created: 20190302T124800Z
+
+----version----
+language: en
+version: 1
+revision: 34c0e0ec-2198-44ff-8641-9bed790d256b
+
+----field----
+field: {714309BB-79C4-4491-A709-CD790D4B59FB}
+name: Title
+key: title
+content-length: 48
+
+15 Birth Control Options (Types and Side Effect)
+----field----
+field: {07B7AB11-8EDF-4EDB-A1CC-7C981B2DEE04}
+name: Main Content
+key: main content
+content-length: 1627
+
+<ul>
+<li>Birth control methods can be broadly classified into barrier methods (that prevent sperm cells from reaching the egg), methods that prevent ovulation such as the birth control pill, and methods that allow fertilization of the egg but prevent implantation of the fertilized egg inside the uterus (womb) such as the IUD (intrauterine device).</li>
+<li>Condoms and diaphragms are examples of barrier birth control methods.</li>
+<li>Birth control pills are an example of a hormonal birth control method that prevents ovulation.</li>
+<li>The decision about what kind of birth control option to use is extremely personal, and there is no single choice that is safest or best for all women or couples.</li>
+<li>A woman should carefully weigh the risks and benefits, along with the effectiveness of each method before choosing a birth control method. A thorough and open discussion with a health care-professional can help in this decision process.</li>
+<li>Different forms of birth control have different side effects and risk profiles.</li>
+<li>The choice of birth control method depends on many factors, such as the desire for reversible birth control (preserving future fertility) or permanent birth control methods (surgical sterilization). Some birth control methods, such as barrier methods, may offer some protection against sexuallytransmitted diseases (STDs), while most methods do not.</li>
+<li>No method of birth control is 100% effective in preventing STDs.</li>
+<li>Some birth control methods have higher effectiveness rates than others, but no method of birth control is 100% effective in every case.</li>
+</ul>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T124800Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+34c0e0ec-2198-44ff-8641-9bed790d256b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T124942Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

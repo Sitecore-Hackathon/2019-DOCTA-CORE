@@ -1,0 +1,91 @@
+----item----
+version: 1
+id: {BAA31A7A-C6CD-4E92-AE8A-F446CAB1621D}
+database: master
+path: /sitecore/content/Docta Core/Home/screening-tests-ever-man-should-have
+parent: {37F0A889-EE32-41F8-90AC-339934022131}
+name: screening-tests-ever-man-should-have
+master: {00000000-0000-0000-0000-000000000000}
+template: {0E7ADD70-1756-45B7-B0A3-95AF072FC68F}
+templatekey: Article
+created: 20190302T134440Z
+
+----version----
+language: en
+version: 1
+revision: f670a135-d90c-4389-a290-09395bcf55cb
+
+----field----
+field: {714309BB-79C4-4491-A709-CD790D4B59FB}
+name: Title
+key: title
+content-length: 37
+
+Screening Tests Every Man Should Have
+----field----
+field: {66F51940-5F6F-404B-8DD9-81DEE8E6BB07}
+name: Introduction
+key: introduction
+content-length: 419
+
+<p>Getting the right screening test at the right time is one of the most important things a man can do for his health. Screenings find diseases early, before you have symptoms, when they're easier to treat. With early detection, colon cancer can be nipped in the bud. Finding diabetes early may help prevent complications such as vision loss and impotence. The tests you need are based on your age and risk factors.</p>
+----field----
+field: {07B7AB11-8EDF-4EDB-A1CC-7C981B2DEE04}
+name: Main Content
+key: main content
+content-length: 2950
+
+<h2>
+Prostate Cancer</h2>
+<p>
+Prostate cancer is the most common cancer found in American men after skin cancer. It tends to be a slow-growing cancer, but there are also aggressive, fast-growing types of prostate cancer. Screening tests can find the disease early, sometimes before symptoms develop, when treatments are most effective.</p>
+<h2>Tests for Prostate Cancer</h2>
+<p>
+Screenings for healthy men may include a digital rectal exam (DRE) and possibly a prostate specific antigen (PSA) blood test. Government guidelines recommend against the routine use of the PSA test. The American Cancer Society advises each man to talk with a doctor about the risks and possible benefits of the PSA test. Discussions should begin at:
+<ul>
+    <li>50 for average-risk men</li>
+    <li>45 for men at high risk. This includes African-Americans.</li>
+    <li>40 for men with a strong family history of prostate cancer</li>
+</ul>
+</p>
+<h2>Testicular Cancer</h2>
+<p>This uncommon cancer develops in a man's testicles, the reproductive glands that produce sperm. Most cases occur between ages 20 and 54. The American Cancer Society recommends that all men have a testicular exam when they see a doctor for a routine physical. Men at higher risk (a family history or an undescended testicle) should talk with a doctor about additional screening. Some doctors advise regular self-exams, gently feeling for hard lumps, smooth bumps, or changes in size or shape of the testes.</p>
+<h2>Colorectal Cancer</h2>
+<p>
+Colorectal cancer is the second most common cause of death from cancer. Men have a slightly higher risk of developing it than women. The majority of colon cancers slowly develop from colon polyps: growths on the inner surface of the colon. After cancer develops, it can invade or spread to other parts of the body. The way to prevent colon cancer is to find and remove polyps before they turn cancerous.</p>
+<h2>Tests for Colon Cancer</h2>
+<p>Screening begins at age 50 in average-risk adults. A colonoscopy is a common test for detecting polyps and colorectal cancer. A doctor views the entire colon using a flexible tube and a camera. Polyps can be removed at the time of the test. A similar alternative is a flexible sigmoidoscopy that examines only the lower part of the colon.</p>
+<p>
+Some patients opt for a virtual colonoscopy -- a CT scan -- or double contrast barium enema -- a special X-ray -- although if polyps are detected, an actual colonoscopy is needed to remove them.</p>
+<h2>Skin Cancer</h2>
+<p>
+The most dangerous form of skin cancer is melanoma (shown here). It begins in specialized cells called melanocytes that produce skin color. Older men are twice as likely to develop melanoma as women of the same age. Men are also 2-3 times more likely to get non-melanoma basal cell and squamous cell skin cancers than women are. Your risk increases as lifetime exposure to sun and/or tanning beds accumulates; sunburns accelerate risk.</p>
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T134440Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+f670a135-d90c-4389-a290-09395bcf55cb
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T134758Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

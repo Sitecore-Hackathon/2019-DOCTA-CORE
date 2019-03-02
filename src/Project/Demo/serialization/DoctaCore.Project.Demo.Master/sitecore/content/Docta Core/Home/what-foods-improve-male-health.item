@@ -1,0 +1,83 @@
+----item----
+version: 1
+id: {5D5BB2D1-3B39-4A71-B4FC-F8ADDDF2CF33}
+database: master
+path: /sitecore/content/Docta Core/Home/what-foods-improve-male-health
+parent: {37F0A889-EE32-41F8-90AC-339934022131}
+name: what-foods-improve-male-health
+master: {00000000-0000-0000-0000-000000000000}
+template: {0E7ADD70-1756-45B7-B0A3-95AF072FC68F}
+templatekey: Article
+created: 20190302T133917Z
+
+----version----
+language: en
+version: 1
+revision: 11edb3d2-df61-4dc5-a01a-e97404743875
+
+----field----
+field: {714309BB-79C4-4491-A709-CD790D4B59FB}
+name: Title
+key: title
+content-length: 45
+
+Men's Health: What Foods Improve Male Health?
+----field----
+field: {66F51940-5F6F-404B-8DD9-81DEE8E6BB07}
+name: Introduction
+key: introduction
+content-length: 318
+
+<p>Should men eat differently? As a man, staying healthy means eating mostly what’s good for anyone—more fruits, vegetables, whole grains, lean meats, and low-fat dairy products. But there are some subtle differences between healthy diets for men and healthy diets for women, even though we share 98.5% of our DNA.</p>
+----field----
+field: {07B7AB11-8EDF-4EDB-A1CC-7C981B2DEE04}
+name: Main Content
+key: main content
+content-length: 3867
+
+<h2>Red Meat</h2>
+<p>If you closed your eyes and imagined a meal made for a man, there’s a good chance you’d dream up an imaginary steak. Men eat a lot more protein than women on average. And for the most part, all that additional protein is healthy. If you want to watch your weight, protein may be a better choice than carbs because your body spends more calories burning protein. It also helps build and retain muscle mass. The key is to have lean red meat in small portions and not eat it daily. </p>
+<p>But not all protein is equally healthy. The healthiest proteins are low in fat, and some cuts of red meat fit this bill, including lean cuts of beef and pork. What’s more, the amino acid leucine is found in red meat. That’s important because this is the amino acid responsible for building and maintaining muscle mass.</p>
+<p>However, there’s reason to exercise caution when it comes to red meat. In some men, an abnormal gene can cause the high iron content of red meat to leave deposits in your vital organs. On the other hand, women need additional iron to make up for what’s lost during their periods.</p>
+<h2>Tasty Cherries</h2>
+<p>Cherries are delicious, no doubt. They’re healthy too. Cherry pigment contain anthocyanins, and these chemicals are anti-inflammatory. Both sweet and tart cherries contain these special pigments, though you’ll find more of them in the tart variety.</p>
+<p>
+Cherries can be powerful against gout, too, which affects more men than women. One major study showed if you’ve suffered from a gout flare-up in the past, chances of future flare-ups are reduced by half by eating 10 cherries a day.</p>
+<h2>Dark Chocolate</h2>
+<p>Wait—I thought this was a health article. It is! Dark chocolate in reasonable amounts is associated with a few positive health outcomes. Though the science is still being weighed, some signs suggest dark chocolate could help reduce your blood pressure, increase circulation, and keep bad cholesterol down.</p>
+<p>
+Of course, that doesn’t mean you should toss your health foods and head straight for the candy aisle. Chocolate candy is still candy, and it should be enjoyed in moderation if you want to stay healthy. How much chocolate consumption is considered moderate? Aim for no more than one ounce a day.</p>
+<h2>Zinc and Shellfish</h2>
+<p>Crazy about crab? Do you love clams, oysters, and shrimp? Shellfish are low-fat, low-calorie, high-protein foods that are good for anyone’s diet. Men, however, may experience additional benefits thanks to zinc.</p>
+<p>Zinc is found abundantly in shellfish. The highest zinc offering of all comes from oysters, which pack 445% of your recommended daily value of zinc into just three ounces. Zinc is required to produce sperm, and it seems to drive up testosterone levels as well. It also helps your prostate, where zinc is found in greater amounts than anywhere else in the body except bone. If you become zinc-deficient, your chances of an inflamed or enlarged prostate increase, as well as your risk of developing prostate cancer.</p>
+<h2>Creamy Avocados</h2>
+<p>Men, take note: avocados were named after you. Or rather, a certain part of you. The word comes from the Aztec word for testicle, “ahuakatl.” Maybe that’s why this creamy green fruit has developed a reputation as an aphrodisiac. Whether or not it deserves that reputation, avocados do have several valuable health benefits.</p>
+<p>Just like nuts and olive oil, avocados are high in fat. But don’t worry—it’s the good kind. Avocados help raise good cholesterol (HDL) while lowering bad cholesterol (LDL). They do this with omega 3 fat, the source of ¾ of their calories. They also have plenty of antioxidants, which help reduce cell damage, especially in the dark green part of the flesh nearest the rind. Use some caution, though, and don’t overconsume avocados—they’re fairly high-calorie.</p>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T133917Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+11edb3d2-df61-4dc5-a01a-e97404743875
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T134311Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
