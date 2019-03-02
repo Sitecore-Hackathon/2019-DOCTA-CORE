@@ -111,6 +111,10 @@ namespace DoctaCore.Project.Demo
         {{{Introduction}}}
     </div>
 
+    <div class="key-phrases">
+        {{{KeyPhrases}}}
+    </div>
+
     <div class="main-content">
         {{{MainContent}}}
     </div>
@@ -171,6 +175,18 @@ namespace DoctaCore.Project.Demo
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
 		[SitecoreField("Introduction")]
 		public virtual string Introduction  {get; set;}
+			
+
+		/// <summary>
+		/// The Key Phrases field.
+		/// <para></para>
+		/// <para>Field Type: Single-Line Text</para>		
+		/// <para>Field ID: 9e0e057c-fdd1-4859-91ce-122798bc3622</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+		[SitecoreField("Key Phrases")]
+		public virtual string Key_Phrases  {get; set;}
 			
 
 		/// <summary>
@@ -238,6 +254,10 @@ public static class Fields
         {{{Introduction}}}
     </div>
 
+    <div class="key-phrases">
+        {{{KeyPhrases}}}
+    </div>
+
     <div class="main-content">
         {{{MainContent}}}
     </div>
@@ -301,6 +321,18 @@ namespace DoctaCore.Project.Demo
 			
 
 		/// <summary>
+		/// The Key Phrases field.
+		/// <para></para>
+		/// <para>Field Type: Single-Line Text</para>		
+		/// <para>Field ID: 9e0e057c-fdd1-4859-91ce-122798bc3622</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+		[SitecoreField("Key Phrases")]
+		public virtual string Key_Phrases  {get; set;}
+			
+
+		/// <summary>
 		/// The Main Content field.
 		/// <para></para>
 		/// <para>Field Type: Rich Text</para>		
@@ -354,6 +386,10 @@ public static class Fields
             @Editable(Model.GlassModel, x => x.Introduction)
         </div>
     
+        <div class="key-phrases">
+            @Editable(Model.GlassModel, x => x.Key_Phrases)
+        </div>
+    
         <div class="main-content">
             @Editable(Model.GlassModel, x => x.Main_Content)
         </div>
@@ -379,6 +415,10 @@ public static class Fields
 
     <div class="introduction">
         {{{Introduction}}}
+    </div>
+
+    <div class="key-phrases">
+        {{{KeyPhrases}}}
     </div>
 
     <div class="main-content">
@@ -421,6 +461,16 @@ namespace DoctaCore.Project.Demo
 		/// <para>Custom Data: </para>
 		/// </summary>
 		string Introduction  {get; set;}
+			
+
+		/// <summary>
+		/// The Key Phrases field.
+		/// <para></para>
+		/// <para>Field Type: Single-Line Text</para>		
+		/// <para>Field ID: 9e0e057c-fdd1-4859-91ce-122798bc3622</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		string Key_Phrases  {get; set;}
 			
 
 		/// <summary>
@@ -484,6 +534,18 @@ namespace DoctaCore.Project.Demo
 			
 
 		/// <summary>
+		/// The Key Phrases field.
+		/// <para></para>
+		/// <para>Field Type: Single-Line Text</para>		
+		/// <para>Field ID: 9e0e057c-fdd1-4859-91ce-122798bc3622</para>
+		/// <para>Custom Data: </para>
+		/// </summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Team Development for Sitecore - GlassItem.tt", "1.0")]
+		[SitecoreField("Key Phrases")]
+		public virtual string Key_Phrases  {get; set;}
+			
+
+		/// <summary>
 		/// The Main Content field.
 		/// <para></para>
 		/// <para>Field Type: Rich Text</para>		
@@ -525,6 +587,15 @@ public static class Fields
             get 
             {
                 return new Guid("66f51940-5f6f-404b-8dd9-81dee8e6bb07");
+            }
+        }
+			
+
+		public static Guid Key_Phrases  
+        {
+            get 
+            {
+                return new Guid("9e0e057c-fdd1-4859-91ce-122798bc3622");
             }
         }
 			

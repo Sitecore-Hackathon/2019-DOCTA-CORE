@@ -1,0 +1,93 @@
+----item----
+version: 1
+id: {225BDB9E-E526-49D8-A95E-523BFC67693E}
+database: master
+path: /sitecore/content/Docta Core/Home/diabetes-symptoms-in-men
+parent: {37F0A889-EE32-41F8-90AC-339934022131}
+name: diabetes-symptoms-in-men
+master: {00000000-0000-0000-0000-000000000000}
+template: {0E7ADD70-1756-45B7-B0A3-95AF072FC68F}
+templatekey: Article
+created: 20190302T141405Z
+
+----version----
+language: en
+version: 1
+revision: 77c7832c-b081-4f7c-9db6-66319e8a3160
+
+----field----
+field: {714309BB-79C4-4491-A709-CD790D4B59FB}
+name: Title
+key: title
+content-length: 33
+
+Diabetes Early Symptoms and Signs
+----field----
+field: {07B7AB11-8EDF-4EDB-A1CC-7C981B2DEE04}
+name: Main Content
+key: main content
+content-length: 2361
+
+<h2>What warning signs and symptoms of diabetes are unique to men?</h2>
+<p>Signs and symptoms of diabetes unique to men include:
+<ul><li>
+    Erectile dysfunction (ED, impotence)</li>
+    <li>Retrograde ejaculation</li>
+    <li>Low testosterone (low-T)</li>
+    <li>Decreased sex drive (decreased libido) and sexual dysfunction</li></ul></p>
+<h2>
+What are risk factors for diabetes in men?</h2>
+<p>
+Gender is a risk factor for diabetes, and men are at higher risk for developing type 2 diabetes than women.</p>
+<p />
+Other risk factors for developing diabetes for both men and women include:
+<ul>
+    <li>Family history: first degree relative with diabetes</li>
+    <li>Ethnicity: increased risk for Asians, Hispanics, and African Americans</li>
+   <li> Obesity</li>
+    <li>Fat distribution: more fat around the middle</li>
+    <li>High blood pressure</li>
+   <li> High cholesterol</li>
+   <li> Sedentary lifestyle (lack of exercise and/or not physically active)</li>
+    <li>Smoking</li>
+    <li>Excess alcohol intake</li>
+    <li>Lack of sleep</li>
+    <li>Low testosterone in men</li>
+    <li>Unhealthy diet with high calorie content containing sugars and lacking beneficial compounds to increase wellness</li>
+</ul><h2>
+How does diabetes affect men differently than women?</h2>
+<p>Men who have type 2 diabetes are twice as likely to have low testosterone (low-T) than men who do not have diabetes. Because of the low levels of the hormone testosterone, men with diabetes can have unhealthy symptoms that are not seen in women with diabetes.</p>
+<p>
+Low testosterone can cause decreased sex drive, depression, lack of energy, and reduced muscle mass. It can also cause male-specific sexual problems and urological problems.</p>
+<p>
+Erectile dysfunction (ED, impotence), or inability to get or maintain an erection, is a common symptom of diabetes in men. Diabetic men experience erectile dysfunction at earlier ages than men who do not have diabetes.</p>
+<p>
+Another diabetes-related sexual dysfunction symptom in men is reduced amounts of ejaculation, or retrograde ejaculation. Retrograde ejaculation is a condition in which the semen goes into the bladder, rather than out of the body through the urethra. Diabetes and damage to the blood vessels causes nerve damage to the muscles that control the bladder and urethra, which results in this problem.</p>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T141405Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+77c7832c-b081-4f7c-9db6-66319e8a3160
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T142036Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

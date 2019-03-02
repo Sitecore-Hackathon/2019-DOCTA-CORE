@@ -1,0 +1,115 @@
+----item----
+version: 1
+id: {139361CA-E59D-464F-95C7-721EAB2EC06E}
+database: master
+path: /sitecore/content/Docta Core/Home/congestive-heart-failure
+parent: {37F0A889-EE32-41F8-90AC-339934022131}
+name: congestive-heart-failure
+master: {00000000-0000-0000-0000-000000000000}
+template: {0E7ADD70-1756-45B7-B0A3-95AF072FC68F}
+templatekey: Article
+created: 20190302T135417Z
+
+----version----
+language: en
+version: 1
+revision: 44171179-824b-41d6-9a86-fc0b4d53de0b
+
+----field----
+field: {714309BB-79C4-4491-A709-CD790D4B59FB}
+name: Title
+key: title
+content-length: 70
+
+Congestive Heart Failure Symptoms, Stages, Causes, and Life Expectancy
+----field----
+field: {66F51940-5F6F-404B-8DD9-81DEE8E6BB07}
+name: Introduction
+key: introduction
+content-length: 1019
+
+<h2>Congestive heart failure definition and facts</h2>
+<ul>
+    <li>Congestive heart failure (CHF) is a condition in which the heart's function as a pump is inadequate to meet the body's needs.</li>
+    <li>Many disease processes can impair the pumping efficiency of the heart to cause congestive heart failure.</li>
+    <li>The symptoms of congestive heart failure vary, but can include:
+<ul>
+        <li>Fatigue</li>
+        <li>Diminished exercise capacity</li>
+        <li>Shortness of breath</li>
+        <li>Swelling (edema)</li>
+</ul>
+</li>
+
+    <li>The diagnosis of congestive heart failure is based on knowledge of the individual's medical history, a careful physical examination, and selected laboratory tests.</li>
+    <li>The treatment of congestive heart failure can include lifestyle modifications, addressing potentially reversible factors, medications, heart transplant, and mechanical therapies.</li>
+    <li>The course of congestive heart failure in any given patient is extremely variable.</li>
+</ul>
+----field----
+field: {07B7AB11-8EDF-4EDB-A1CC-7C981B2DEE04}
+name: Main Content
+key: main content
+content-length: 3879
+
+<h2>What is congestive heart failure (CHF)?</h2>
+<p>
+Heart failure describes the inability or failure of the heart to meet the needs of organs and tissues for oxygen and nutrients. This decrease in cardiac output, the amount of blood that the heart pumps, is not adequate to circulate the blood returning to the heart from the body and lungs, causing fluid (mainly water) to leak from capillary blood vessels. This leads to the symptoms that may include shortness of breath, weakness, and swelling.</p>
+<h2>Understanding blood flow in the heart and body</h2>
+<p>
+The right side of the heart pumps blood to the lungs while the left side pumps blood to the rest of the body. Blood from the body enters the right atrium though the vena cava. It then flows into the right ventricle where it is pumped to the lungs through the pulmonary artery, which carries deoxygenated blood to the lungs. In the lungs, oxygen is loaded onto red blood cells and returns to the left atrium of the heart via the pulmonary veins. Blood then flows into the left ventricle where it is pumped to the organs and tissues of the body. Oxygen is downloaded from red blood cells into the various organs while carbon dioxide, a waste product of metabolism, is added to be removed in the lungs. Blood then returns to the right atrium to start the cycle again. The pulmonary veins are unusual in that they carry oxygenated blood, while the pulmonary artery carries deoxygenated blood. This is a reversal of duties versus the roles of veins and arteries in the rest of the body.</p>
+<p>
+Left heart failure occurs when the left ventricle cannot pump blood to the body and fluid backs up and leaks into the lungs causing shortness of breath. Right heart failure occurs when the right ventricle cannot adequately pump blood to the lungs. Blood and fluid may back up in the veins that deliver blood to the heart. This can cause fluid to leak into tissues and organs.</p>
+<p>
+It is important to know that both sides of the heart may fail to function adequately at the same time and this is called biventricular heart failure. This often occurs since the most common cause of right heart failure is left heart failure.</p>
+<h3>Shortness of breath</h3>
+<p>
+The hallmark and most common symptom of left heart failure is shortness of breath and may occur.</p>
+<ol>
+    <li>While at rest</li>
+    <li>With activity or exertion</li>
+    <li>While lying flat (orthopnea)</li>
+    <li>While awakening the person from sleep (paroxysmal nocturnal dyspnea); or</li>
+    <li>Due to fluid (water, mainly) accumulation in the lungs or the inability of the heart to be efficient enough to pump blood to the organs of the body when called upon in times of exertion or stress.</li>
+</ol>
+<h2>
+Chest Pain</h2>
+<ol><li>
+    Chest pain or angina may be associated, especially if the underlying cause of the failure is coronary heart disease.</li></ol>
+<h2>
+Right heart failure, left heart failure, or both</h2>
+<ol>
+    <li>People with right heart failure leak fluid into the tissue and organs that deliver blood to the right heart through the vena cava.</li>
+    <li>Back pressure in capillary blood vessels cause them to leak water into the space between cells and commonly the fluid can be found in the lowest parts of the body.</li>
+    <li>Gravity causes fluid to accumulate in the feet and ankles but as more fluid accumulates, it may creep up to involve all of the lower legs.</li>
+    <li>Fluid can also accumulate within the liver causing it to swell (hepatomegaly) and within the abdominal cavity (ascites).</li>
+    <li>Ascites and hepatomegaly may make the patient feel bloated, nauseated, and have abdominal pain with the feeling of distension.</li>
+    <li>Depending upon their underlying illness and the clinical situation, patients may have symptoms of right heart failure, left heart failure, or both.</li>
+<ol></ol></ol>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T135417Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+44171179-824b-41d6-9a86-fc0b4d53de0b
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T140458Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

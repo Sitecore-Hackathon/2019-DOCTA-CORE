@@ -1,0 +1,79 @@
+----item----
+version: 1
+id: {23AAAC29-B4A2-42A5-8A1A-5E38BB94031B}
+database: master
+path: /sitecore/content/Docta Core/Home/breast-agumentation
+parent: {37F0A889-EE32-41F8-90AC-339934022131}
+name: breast-agumentation
+master: {00000000-0000-0000-0000-000000000000}
+template: {0E7ADD70-1756-45B7-B0A3-95AF072FC68F}
+templatekey: Article
+created: 20190302T131911Z
+
+----version----
+language: en
+version: 1
+revision: bda8950f-e94e-48c5-a8cd-a83c2656649d
+
+----field----
+field: {714309BB-79C4-4491-A709-CD790D4B59FB}
+name: Title
+key: title
+content-length: 19
+
+Breast Augmentation
+----field----
+field: {66F51940-5F6F-404B-8DD9-81DEE8E6BB07}
+name: Introduction
+key: introduction
+content-length: 762
+
+<h2>What should I know about breast augmentation (breast implants)?</h2>
+<ul>
+    <li>Smooth implants have less chance of rippling (waviness of skin) than textured (roughened) implants.</li>
+    <li>Smooth implants have a higher incidence of capsule contracture (hardening of the implant) than textured implants.</li>
+    <li>Implants placed under the muscle result in more pain postoperatively but have a lower incidence of capsule contracture and rippling.</li>
+    <li>Infection and bleeding are rare but must be treated promptly.</li>
+    <li>A certain number of patients may need another surgery to correct a problem.</li>
+    <li>The aesthetic results of breast implants are best appreciated by the patient who feels the need for larger breasts.</li>
+</ul>
+----field----
+field: {07B7AB11-8EDF-4EDB-A1CC-7C981B2DEE04}
+name: Main Content
+key: main content
+content-length: 910
+
+<h2>What is breast augmentation?</h2>
+<p>Augmentation of the breast consists of insertion of a silicone bag (prosthesis) under the breast (submammary) or under the breast and chest muscle (subpectoral) and then filling the bag with saline (salt water). This prosthesis expands the breast area to give a fuller breast (increased cup size), give a better contour, and give more cleavage.</p>
+<h2>How is the incision made for breast implants?</h2>
+<p>The incision (cut) may be placed at various locations such as: under the breast at the breast fold; periareolar which is at the edge of the areola (brown area consisting of nipple and surrounding area); within the areola; in the armpit (axillary); or in the umbilical area.</p>
+<p>
+The thinnest scar is usually in the areola. The umbilical incision approach is used with an endoscope (tube with a light for visualization and placement of the breast implant).</p>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T131911Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+bda8950f-e94e-48c5-a8cd-a83c2656649d
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T132127Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

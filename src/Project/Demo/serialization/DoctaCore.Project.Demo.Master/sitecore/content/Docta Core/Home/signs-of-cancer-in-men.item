@@ -1,0 +1,86 @@
+----item----
+version: 1
+id: {1B7E10D4-BEE0-4DF5-AA67-C93056360FE1}
+database: master
+path: /sitecore/content/Docta Core/Home/signs-of-cancer-in-men
+parent: {37F0A889-EE32-41F8-90AC-339934022131}
+name: signs-of-cancer-in-men
+master: {00000000-0000-0000-0000-000000000000}
+template: {0E7ADD70-1756-45B7-B0A3-95AF072FC68F}
+templatekey: Article
+created: 20190302T134921Z
+
+----version----
+language: en
+version: 1
+revision: 14453fd5-8994-467f-96bc-751a8ba707fd
+
+----field----
+field: {714309BB-79C4-4491-A709-CD790D4B59FB}
+name: Title
+key: title
+content-length: 43
+
+Signs of Cancer in Men: Could it Be Cancer?
+----field----
+field: {66F51940-5F6F-404B-8DD9-81DEE8E6BB07}
+name: Introduction
+key: introduction
+content-length: 651
+
+<p>Men are notorious for ignoring health problems. If a man’s health changes in a way different from how it has in the past then he should get it checked out by his doctor. In some cases, if the underlying cause of a problem is cancer, ignoring symptoms could put men at risk. Some cancer symptoms in men are specific only to men (such as a mass in the scrotum or testicle), and others symptoms such as pain or fatigue are general and could have many causes.
+</p>
+<p>
+It is important to see a doctor if your experience any of the symptoms outlined on the following slides to rule our cancer, or to detect one early while it is more easily treated.</p>
+----field----
+field: {07B7AB11-8EDF-4EDB-A1CC-7C981B2DEE04}
+name: Main Content
+key: main content
+content-length: 2291
+
+<h2>No.1 - Breast Changes</h2>
+<p>Breast cancer in men is not common, but it is possible. Any mass in the breast area, or breast changes such as dimpling or puckering of the skin, nipple retraction, redness or scaling, or nipple discharge should be reported to your physician. The doctor may order a mammogram, a biopsy, or other tests if indicated.</p>
+<h2>No. 2 - Persistent Pain or Discomfort in Any Body Area</h2>
+<p>
+Though pain is a common symptom of many medical disorders, any new pain that persists should be evaluated by a doctor. Your pain may not be cancer, but it's best to have a physician check you thoroughly to rule out other conditions and treat the underlying medical cause of your pain.</p>
+<h2>No 3. - Changes in the Testicles or Scrotum</h2>
+<p>
+Any change in the size of the testicles, or swelling, lumps, or a feeling of heaviness in the scrotum may be a symptom of testicular cancer. This cancer affects younger men age 20 to 39, and so the American Cancer Society recommends men get a testicular exam as part of regular checkups. Early detection is important as some testicular cancers grow rapidly.</p>
+<h2>No. 4 - Changes in the Lymph Nodes (Swelling, Painful, Warm and/or Reddish Color)</h2>
+<p>
+Swelling or a lump on the lymph nodes, or “glands,” such as under the armpits or in the neck could be a sign of infection, or it could be cancer. If your lymph node gets larger or stays larger for more than a month, consult your doctor.</p>
+<h2>No. 5 - Fever (High Fever of > 103 F or Chronic Fevers, Usually More Than One Week)</h2>
+<p>
+A high fever is usually a sign of infection but in some cases it could be a symptoms of cancer. Some blood cancers such as leukemia or lymphoma can cause fever. Other cancers when they have spread (metastasized) to another part of the body can cause fever. Consult your doctor to address the underlying cause of your fever.</p>
+<h2>No. 6 - Weight Loss Without Trying</h2>
+<p>
+While many people are happy to see pounds drop off effortlessly, this can also be a sign of cancer. Cancer cells use up a lot of the body's energy, and can cause a seemingly unexplained weight loss. If you lose more than 10% of your pre-illness body weight in a short time without diet or exercise, even if you are overweight, talk to your doctor.</p>
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T134921Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+14453fd5-8994-467f-96bc-751a8ba707fd
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T135149Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
