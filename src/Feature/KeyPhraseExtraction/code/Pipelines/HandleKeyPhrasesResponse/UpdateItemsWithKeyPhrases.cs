@@ -35,7 +35,7 @@ namespace DoctaCore.Feature.KeyPhraseExtraction.Pipelines.HandleKeyPhrasesRespon
                 {
                     // ReSharper disable once InconsistentNaming
                     var masterDB = _factory.GetDatabase("master"); // TODO: move to config and inject
-                    var item = masterDB.GetItem(new ID(document.Id));
+                    var item = masterDB.GetItem(new ID(document.ItemId));
 
                     using (new SecurityDisabler())
                     using (new EditContext(item))
