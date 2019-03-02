@@ -23,7 +23,9 @@ The user-configured mapping rules enable the user to add any number of mappings 
 
 ## Pre-requisites
 
-Docta Core has no dependencies on other modules. 
+Docta Score has no dependencies on other modules. However, the default version does require you to have an Azure Cognitive Services subscritpion (more details below).
+
+Additionally, in order to use Docta Score right away, you will need to have some of your marketing taxonomy set up, specifically Profiles (top-level; contain the Profile Cards, Pattern Cards and Profile Keys for the Profile) and Profile Keys. Feel free to set these up as you get started with Docta Score. Refer to the [Sitecore documentation](https://doc.sitecore.com/users/91/sitecore-experience-platform/en/create-a-profile-key-or-persona.html) if you need instruction on how to set these entities up in your solution.
 
 ## Installation
 
