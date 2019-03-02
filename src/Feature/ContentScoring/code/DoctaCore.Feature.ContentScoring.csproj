@@ -383,6 +383,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pipelines\HandleKeyPhrasesResponse\ScoreContentWithKeyPhrases.cs" />
     <Compile Include="Pipelines\ScoreContent\ProcessContentScoringRules.cs" />
     <Compile Include="Pipelines\ScoreContent\SaveContentScores.cs" />
     <Compile Include="Pipelines\ScoreContent\ScoreContentPipelineArgs.cs" />
@@ -406,6 +407,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Foundation\KeyPhrases\code\DoctaCore.Foundation.KeyPhrases.csproj">
+      <Project>{eefabf5d-d727-46ee-aba7-a6b5e0bc0c26}</Project>
+      <Name>DoctaCore.Foundation.KeyPhrases</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\Foundation\Rules\code\DoctaCore.Foundation.Rules.csproj">
       <Project>{93561427-5aaa-4468-9c85-af6b5ca7d2e9}</Project>
       <Name>DoctaCore.Foundation.Rules</Name>
