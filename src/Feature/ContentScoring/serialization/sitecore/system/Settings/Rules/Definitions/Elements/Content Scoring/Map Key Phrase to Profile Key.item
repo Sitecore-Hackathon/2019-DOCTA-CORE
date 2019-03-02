@@ -20,15 +20,15 @@ DoctaCore.Feature.ContentScoring.Rules.Actions.MapKeyPhraseToProfileKey, DoctaCo
 ----version----
 language: en
 version: 1
-revision: d8b228f5-7c85-4ed9-b416-4f120072016d
+revision: 7ce7ee34-97d5-4854-868a-8dbdf7645a9f
 
 ----field----
 field: {EEB36A3B-40D9-4AF5-862A-DE257B84DCA3}
 name: Text
 key: text
-content-length: 300
+content-length: 360
 
-map the [Phrase,,,specific] phrase of the content's key phrases to the [ProfileId,Tree,root=/sitecore/system/Marketing Control Panel/Profiles,specific] profile's [ProfileKey,,,specific] profile key of the page's tracking score and increase its value by [Points,Integer,,the specific number of] points
+map the [Phrase,,,specific] phrase of the content's key phrases to the [ProfileId,Tree,root=/sitecore/system/Marketing Control Panel/Profiles,specific] profile's [ProfileKeyId,Tree,root=/sitecore/system/Marketing Control Panel/Profiles,specific] profile key of the page's tracking score and increase its value by [Points,Integer,,the specific number of] points
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
 name: __Owner
@@ -56,14 +56,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d8b228f5-7c85-4ed9-b416-4f120072016d
+7ce7ee34-97d5-4854-868a-8dbdf7645a9f
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190302T103716Z
+20190302T104638Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

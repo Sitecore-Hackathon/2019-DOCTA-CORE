@@ -25,7 +25,13 @@ namespace DoctaCore.Feature.ContentScoring.Pipelines.ScoreContent
                         var profileKeys = string.Join(
                             string.Empty,
                             profileEntry.Value
-                                .Select(profileKeyEntry => $"<key name=\"{profileKeyEntry.Key}\" value=\"{profileKeyEntry.Value}\" />"));
+                                .Select(profileKeyEntry =>
+                                {
+                                    var profileKeyItem = args.Item.Database.GetItem(profileKeyEntry.Key);
+                                    var profileKeyName = profileKeyItem["Name"];
+
+                                    return $"<key name=\"{profileKeyName}\" value=\"{profileKeyEntry.Value}\" />";
+                                }));
                         return
                             $"<profile id=\"{profileItem.ID.Guid.ToString().ToLowerInvariant()}\" name=\"{profileItem.Name}\">{profileKeys}</profile>";
                     }));
