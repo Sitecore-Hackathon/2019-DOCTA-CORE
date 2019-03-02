@@ -2,6 +2,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KeyPhrases", "KeyPhrases", "{99141A50-1D31-499F-8710-E2EFC6989B5E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctaCore.Foundation.KeyPhrases", "src\Foundation\KeyPhrases\code\DoctaCore.Foundation.KeyPhrases.csproj", "{EEFABF5D-D727-46EE-ABA7-A6B5E0BC0C26}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ContentScoring", "ContentScoring", "{AA636E11-425F-4BF6-8B65-CCA7207B0A65}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctaCore.Feature.ContentScoring", "src\Feature\ContentScoring\code\DoctaCore.Feature.ContentScoring.csproj", "{22084016-014A-4170-A0A1-1CC58C8EA1EA}"
@@ -52,6 +56,7 @@ EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "DoctaCore.Project.Demo.Master", "src\Project\Demo\serialization\DoctaCore.Project.Demo.Master\DoctaCore.Project.Demo.Master.scproj", "{728AA11F-94D0-4E03-B4FE-5F81FA53395D}"
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "DoctaCore.Project.Demo.Content", "src\Project\Demo\serialization\DoctaCore.Project.Demo.Content\DoctaCore.Project.Demo.Content.scproj", "{7958D375-57F4-4D54-9208-8D1CF6A5F72D}"
+EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "DoctaCore.Feature.ContentScoring.Master", "src\Feature\ContentScoring\serialization\DoctaCore.Feature.ContentScoring.Master.scproj", "{964E5665-E977-44A3-B620-98184C253CED}"
 EndProject
 Global
@@ -60,6 +65,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEFABF5D-D727-46EE-ABA7-A6B5E0BC0C26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEFABF5D-D727-46EE-ABA7-A6B5E0BC0C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEFABF5D-D727-46EE-ABA7-A6B5E0BC0C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEFABF5D-D727-46EE-ABA7-A6B5E0BC0C26}.Release|Any CPU.Build.0 = Release|Any CPU
 		{22084016-014A-4170-A0A1-1CC58C8EA1EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{22084016-014A-4170-A0A1-1CC58C8EA1EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22084016-014A-4170-A0A1-1CC58C8EA1EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -99,6 +108,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{EEFABF5D-D727-46EE-ABA7-A6B5E0BC0C26} = {99141A50-1D31-499F-8710-E2EFC6989B5E}
 		{AA636E11-425F-4BF6-8B65-CCA7207B0A65} = {17DD5718-6E13-4F2C-9738-B410396D4552}
 		{22084016-014A-4170-A0A1-1CC58C8EA1EA} = {AA636E11-425F-4BF6-8B65-CCA7207B0A65}
 		{DB58A531-860A-443F-B68A-03F2C35B6033} = {4FDA1DCD-D33E-447E-91C1-F4AE818E2CF0}
@@ -113,7 +123,6 @@ Global
 		{964E5665-E977-44A3-B620-98184C253CED} = {AA636E11-425F-4BF6-8B65-CCA7207B0A65}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}
 		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 	EndGlobalSection
