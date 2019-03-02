@@ -6,7 +6,7 @@ using System.Web;
 
 namespace DoctaCore.Feature.KeyPhraseExtraction.Models
 {
-    public class DocumentCollection : List<Document>
+    public class RequestDocumentCollection : List<RequestDocument>
     { 
     }
 }
