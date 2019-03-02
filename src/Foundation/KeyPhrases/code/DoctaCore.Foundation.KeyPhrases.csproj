@@ -127,12 +127,14 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseResponseHandler.cs" />
     <Compile Include="IHandleResponse.cs" />
     <Compile Include="IItemRetriever.cs" />
     <Compile Include="IKeyPhrasesManager.cs" />
     <Compile Include="IRequestKeyPhrases.cs" />
     <Compile Include="ITypeConverter.cs" />
     <Compile Include="KeyPhrasesManager.cs" />
+    <Compile Include="Pipelines\HandleKeyPhrasesResponse\HandleKeyPhrasesResponsePipelineArgs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
