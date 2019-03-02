@@ -8,9 +8,9 @@ using DoctaCore.Foundation.KeyPhrases;
 
 namespace DoctaCore.Feature.KeyPhraseExtraction
 {
-    public class AzureKeyPhraseResponseHandler : BaseResponseHandler<DocumentCollection, Document, HandleKeyPhrasesResponsePipelineArgs>
+    public class AzureKeyPhraseResponseHandler : BaseResponseHandler<ResponseDocumentCollection, ResponseDocument, HandleKeyPhrasesResponsePipelineArgs>
     {
-        public override HandleKeyPhrasesResponsePipelineArgs GetArgs(DocumentCollection collection)
+        public override HandleKeyPhrasesResponsePipelineArgs GetArgs(ResponseDocumentCollection collection)
         {
             return new HandleKeyPhrasesResponsePipelineArgs()
             {

@@ -13,7 +13,7 @@ namespace DoctaCore.Feature.KeyPhraseExtraction
     {
         public void Configure(IServiceCollection serviceCollection)
         {
-            serviceCollection.AddSingleton<IHandleResponse<DocumentCollection, Document>,AzureKeyPhraseResponseHandler>();
+            serviceCollection.AddSingleton<IHandleResponse<ResponseDocumentCollection, ResponseDocument>,AzureKeyPhraseResponseHandler>();
 
         }
     }

@@ -5,7 +5,7 @@ using System.Web;
 
 namespace DoctaCore.Feature.KeyPhraseExtraction.Models
 {
-    public class Document
+    public class ResponseDocument
     {
     }
 }
