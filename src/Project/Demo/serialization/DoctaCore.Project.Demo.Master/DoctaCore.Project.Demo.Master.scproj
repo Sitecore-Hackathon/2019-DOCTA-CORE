@@ -151,6 +151,29 @@
     </SitecoreItem>
   </ItemGroup>
   <ItemGroup>
+    <CodeGenTemplate Include="..\..\..\..\..\lib\Code Generation Templates\GeneralExtensions.tt">
+      <Link>Code Generation Templates\GeneralExtensions.tt</Link>
+    </CodeGenTemplate>
+    <CodeGenTemplate Include="..\..\..\..\..\lib\Code Generation Templates\glassheader.tt">
+      <Link>Code Generation Templates\glassheader.tt</Link>
+    </CodeGenTemplate>
+    <CodeGenTemplate Include="..\..\..\..\..\lib\Code Generation Templates\glassitem.tt">
+      <Link>Code Generation Templates\glassitem.tt</Link>
+    </CodeGenTemplate>
+    <CodeGenTemplate Include="..\..\..\..\..\lib\Code Generation Templates\helpers.tt">
+      <Link>Code Generation Templates\helpers.tt</Link>
+    </CodeGenTemplate>
+    <CodeGenTemplate Include="..\..\..\..\..\lib\Code Generation Templates\Inflector.tt">
+      <Link>Code Generation Templates\Inflector.tt</Link>
+    </CodeGenTemplate>
+    <CodeGenTemplate Include="..\..\..\..\..\lib\Code Generation Templates\ItemPaths.tt">
+      <Link>Code Generation Templates\ItemPaths.tt</Link>
+    </CodeGenTemplate>
+    <CodeGenTemplate Include="..\..\..\..\..\lib\Code Generation Templates\StringExtensions.tt">
+      <Link>Code Generation Templates\StringExtensions.tt</Link>
+    </CodeGenTemplate>
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\..\code\DoctaCore.Project.Demo.csproj">
       <Project>{e0a6a6de-53a1-4b38-a225-283e03835589}</Project>
       <Name>DoctaCore.Project.Demo</Name>
