@@ -1,32 +1,34 @@
-# Documentation
-
-The documentation for this years Hackathon must be provided as a readme in Markdown format as part of your submission. 
-
-You can find a very good reference to Github flavoured markdown reference in [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). If you want something a bit more WYSIWYG for editing then could use [StackEdit](https://stackedit.io/app) which provides a more user friendly interface for generating the Markdown code. Those of you who are [VS Code fans](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) can edit/preview directly in that interface too.
-
-Examples of things to include are the following.
+# Docta Score
+A module by the Docta Core team of awesomers
 
 ## Summary
 
-**Category:** Hackathon Category
+**Category:** Best enhancement to the Sitecore Admin (XP) UI for Content Editors & Marketers
 
-What is the purpose of your module? What problem does it solve and how does it do that?
+### Problem 
+
+One of the biggest gaps in the Sitecore industry is in the area of rapid and affordable analytics and behavior-driven personalization enablement for customers. By and large, behavioral personalization on Sitecore sites requires customers to pay for or take on significant effort to score and/or profile their content in order to generate a viable set of analytics data. This effort isn't typically cheap or quick, and as customers often feel that other desired solution features implemented during build phases are more important, the analytics/personalization piece of projects tends to be the first chunk of work to get cut or bumped to the mythical "phase 2". This is rather disappointing for many reasons, not the least of which is the fact that some of Sitecore's greatest benefits are its personalization and analytics features. 
+
+### Docta Score to the Rescue
+
+Docta Score seeks to remedy this ailment with Sitecore solutions, by enabling clients to rapidly score and profile their content by leveraging Machine Learning to do the heavy lifting. With a minimal amount of one-time, rules-engine-based configuration - wherein the content author sets up mappings of key phrases to profile keys and scores - customers can leverage Docta Score to score and profile their content for them, including new content updated after the initial processing. 
+
+### How it Works
+
+Docta Score works by sending item textual content stored in the Content Search index (Solr, by default) to Azure Cognitive Service's Text Analytics API - more specifically the Key Phrase Extraction App - in order to retrieve the list of key phrases that occur in the item's content. These Key Phrases are passed in as arguments to the mapping rules configured by the user and processed by the Rules Engine to determine which, if any, profile keys should be scored on the item and what that score should be. 
+
+The user-configured mapping rules enable the user to add any number of mappings for key phrases, and supports setting the number of points that a given mapping adds to the score for the specified profile key in the item's Tracking field. For example, a content author of the heart surgey section of a healthcare website could add a mapping for the key phrase "cardiology" with a score of 20 points, and separately add a mapping for the key phrase "cardio-vascular surgery" for 40 points. This flexibility gives authors the ability to control the default key phrase mappings for their content at a granular level.
 
 ## Pre-requisites
 
-Does your module rely on other Sitecore modules or frameworks?
-
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
+Docta Core has no dependencies on other modules. 
 
 ## Installation
 
 Provide detailed instructions on how to install the module, and include screenshots where necessary.
 
 1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-2. ???
-3. Profit
+2. Smile
 
 ## Configuration
 
