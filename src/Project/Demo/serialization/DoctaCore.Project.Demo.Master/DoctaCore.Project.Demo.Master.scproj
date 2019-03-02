@@ -16,9 +16,6 @@
     <AssemblyName>DoctaCore.Product.Demo.Master</AssemblyName>
     <Name>DoctaCore.Project.Demo.Master</Name>
     <RootNamespace>DoctaCore.Product.Demo.Master</RootNamespace>
-    <SourceWebVirtualPath>/DoctaCore.Project.Demo.csproj</SourceWebVirtualPath>
-    <SourceWebProject>{e0a6a6de-53a1-4b38-a225-283e03835589}|src\Project\Demo\code\DoctaCore.Project.Demo.csproj</SourceWebProject>
-    <SourceWebPhysicalPath>..\code</SourceWebPhysicalPath>
     <ManageRoles>False</ManageRoles>
     <SitecoreDatabase>master</SitecoreDatabase>
     <AssemblyStatus>Exclude</AssemblyStatus>
@@ -28,6 +25,9 @@
     <CodeGenFile>Models.Generated.cs</CodeGenFile>
     <BaseTransformFile>glassitem.tt</BaseTransformFile>
     <HeaderTransformFile>glassheader.tt</HeaderTransformFile>
+    <SourceWebVirtualPath>/DoctaCore.Project.Demo.csproj</SourceWebVirtualPath>
+    <SourceWebProject>{e0a6a6de-53a1-4b38-a225-283e03835589}|src\Project\Demo\code\DoctaCore.Project.Demo.csproj</SourceWebProject>
+    <SourceWebPhysicalPath>..\..\code</SourceWebPhysicalPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,12 +46,6 @@
     <AssemblyAttributes Include="AssemblyVersion">
       <Value>$(AssemblyVersion)</Value>
     </AssemblyAttributes>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\code\DoctaCore.Project.Demo.csproj">
-      <Project>{e0a6a6de-53a1-4b38-a225-283e03835589}</Project>
-      <Name>DoctaCore.Project.Demo</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <SitecoreItem Include="sitecore\content.item">
@@ -157,27 +151,10 @@
     </SitecoreItem>
   </ItemGroup>
   <ItemGroup>
-    <CodeGenTemplate Include="..\..\..\..\..\lib\Code Generation Templates\GeneralExtensions.tt">
-      <Link>Code Generation Templates\GeneralExtensions.tt</Link>
-    </CodeGenTemplate>
-    <CodeGenTemplate Include="..\..\..\..\..\lib\Code Generation Templates\glassheader.tt">
-      <Link>Code Generation Templates\glassheader.tt</Link>
-    </CodeGenTemplate>
-    <CodeGenTemplate Include="..\..\..\..\..\lib\Code Generation Templates\glassitem.tt">
-      <Link>Code Generation Templates\glassitem.tt</Link>
-    </CodeGenTemplate>
-    <CodeGenTemplate Include="..\..\..\..\..\lib\Code Generation Templates\helpers.tt">
-      <Link>Code Generation Templates\helpers.tt</Link>
-    </CodeGenTemplate>
-    <CodeGenTemplate Include="..\..\..\..\..\lib\Code Generation Templates\Inflector.tt">
-      <Link>Code Generation Templates\Inflector.tt</Link>
-    </CodeGenTemplate>
-    <CodeGenTemplate Include="..\..\..\..\..\lib\Code Generation Templates\ItemPaths.tt">
-      <Link>Code Generation Templates\ItemPaths.tt</Link>
-    </CodeGenTemplate>
-    <CodeGenTemplate Include="..\..\..\..\..\lib\Code Generation Templates\StringExtensions.tt">
-      <Link>Code Generation Templates\StringExtensions.tt</Link>
-    </CodeGenTemplate>
+    <ProjectReference Include="..\..\code\DoctaCore.Project.Demo.csproj">
+      <Project>{e0a6a6de-53a1-4b38-a225-283e03835589}</Project>
+      <Name>DoctaCore.Project.Demo</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>
