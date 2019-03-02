@@ -17,7 +17,7 @@ namespace DoctaCore.Feature.KeyPhraseExtraction
             serviceCollection.AddSingleton<IHandleResponse<ResponseDocumentCollection, ResponseDocument>,AzureKeyPhraseResponseHandler>();
             serviceCollection.AddSingleton<ITypeConverter<IEnumerable<Item>, RequestDocumentCollection>, RequestDocumentTypeConverter>();
             serviceCollection.AddSingleton<ITypeConverter<RequestDocumentCollection, string>, SerializeDocumentRequestModelForAzure>();
-
+            serviceCollection.AddSingleton<ITypeConverter<string, ResponseDocumentCollection>, ResponseDocumentTypeConverter>();
         }
     }
 }

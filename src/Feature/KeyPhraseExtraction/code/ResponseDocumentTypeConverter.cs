@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using DoctaCore.Feature.KeyPhraseExtraction.Models;
+using DoctaCore.Feature.KeyPhraseExtraction.Shell.Framework.Commands;
 using DoctaCore.Foundation.KeyPhrases;
+using Newtonsoft.Json;
 
 namespace DoctaCore.Feature.KeyPhraseExtraction
 {
-    public class ResponseDocumentTypeConverter : ITypeConverter<string, ResponseDocument>
+    public class ResponseDocumentTypeConverter : ITypeConverter<string, ResponseDocumentCollection>
     {
-        public ResponseDocument Convert(string obj)
+        public ResponseDocumentCollection Convert(string obj)
         {
-            throw new NotImplementedException();
+            var response = JsonConvert.DeserializeObject<ResponseDocumentCollection>(obj);
+
+            return response;
         }
     }
 }
