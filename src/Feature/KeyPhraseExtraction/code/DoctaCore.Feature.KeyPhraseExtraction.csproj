@@ -63,7 +63,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
-    <Content Include="web.config" />
+    <None Include="web.config" />
     <None Include="web.Debug.config">
       <DependentUpon>web.config</DependentUpon>
     </None>
