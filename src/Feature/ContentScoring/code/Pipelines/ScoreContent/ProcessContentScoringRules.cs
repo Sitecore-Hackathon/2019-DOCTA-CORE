@@ -24,12 +24,20 @@ namespace DoctaCore.Feature.ContentScoring.Pipelines.ScoreContent
                 return;
             }
 
-            var context = new ContentScoringRuleContext(args.KeyPhrases)
+            var ruleArgs = new ContentScoringRuleArgs()
+            {
+                KeyPhrases = args.KeyPhrases,
+                ProfileKeyScores = new Dictionary<string, Dictionary<string, int>>()
+            };
+
+            var context = new ContentScoringRuleContext(ruleArgs)
             {
                 Item = args.Item
             };
 
             RuleManager.RunRules(context, ruleFolderId);
+
+            args.ProfileKeyScores = ruleArgs.ProfileKeyScores;
         }
     }
 }

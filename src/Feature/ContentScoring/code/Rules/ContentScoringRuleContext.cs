@@ -6,9 +6,9 @@ using DoctaCore.Foundation.Rules;
 
 namespace DoctaCore.Feature.ContentScoring.Rules
 {
-    public class ContentScoringRuleContext : RuleContext<IEnumerable<string>>
+    public class ContentScoringRuleContext : RuleContext<ContentScoringRuleArgs>
     {
-        public ContentScoringRuleContext(IEnumerable<string> args) : base(args)
+        public ContentScoringRuleContext(ContentScoringRuleArgs args) : base(args)
         {
         }
     }
