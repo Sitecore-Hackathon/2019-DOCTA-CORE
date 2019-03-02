@@ -52,6 +52,7 @@ EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "DoctaCore.Project.Demo.Master", "src\Project\Demo\serialization\DoctaCore.Project.Demo.Master\DoctaCore.Project.Demo.Master.scproj", "{728AA11F-94D0-4E03-B4FE-5F81FA53395D}"
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "DoctaCore.Project.Demo.Content", "src\Project\Demo\serialization\DoctaCore.Project.Demo.Content\DoctaCore.Project.Demo.Content.scproj", "{7958D375-57F4-4D54-9208-8D1CF6A5F72D}"
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "DoctaCore.Feature.ContentScoring.Master", "src\Feature\ContentScoring\serialization\DoctaCore.Feature.ContentScoring.Master.scproj", "{964E5665-E977-44A3-B620-98184C253CED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +88,12 @@ Global
 		{7958D375-57F4-4D54-9208-8D1CF6A5F72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7958D375-57F4-4D54-9208-8D1CF6A5F72D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7958D375-57F4-4D54-9208-8D1CF6A5F72D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{964E5665-E977-44A3-B620-98184C253CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{964E5665-E977-44A3-B620-98184C253CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{964E5665-E977-44A3-B620-98184C253CED}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{964E5665-E977-44A3-B620-98184C253CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{964E5665-E977-44A3-B620-98184C253CED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{964E5665-E977-44A3-B620-98184C253CED}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -103,6 +110,7 @@ Global
 		{D27C83D2-2EAF-4E44-A1ED-2B3C2EBB5854} = {DAFED8F5-6CBD-4384-AAD6-DC3BCCF24911}
 		{728AA11F-94D0-4E03-B4FE-5F81FA53395D} = {F53DB067-16E1-4A16-9BA8-2936847DEBA7}
 		{7958D375-57F4-4D54-9208-8D1CF6A5F72D} = {F53DB067-16E1-4A16-9BA8-2936847DEBA7}
+		{964E5665-E977-44A3-B620-98184C253CED} = {AA636E11-425F-4BF6-8B65-CCA7207B0A65}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}

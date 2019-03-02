@@ -15,7 +15,7 @@ namespace DoctaCore.Feature.ContentScoring.Rules.Actions
     public class MapKeyPhraseToProfileKey<TRuleContext> : BaseRuleAction<TRuleContext> where TRuleContext : ContentScoringRuleContext
     {
         public string Phrase { get; set; }
-        public string ProfileKey { get; set; }
+        public string ProfileKeyId { get; set; }
         public string ProfileId { get; set; }
         public string Points { get; set; }
 
@@ -24,7 +24,7 @@ namespace DoctaCore.Feature.ContentScoring.Rules.Actions
             Assert.IsNotNull(ruleContext.Item, "ruleContext.Item != null");
 
             Assert.IsNotNullOrEmpty(Phrase, "Phrase != null && Phrase != string.Empty");
-            Assert.IsNotNullOrEmpty(ProfileKey, "ProfileKey != null && ProfileKey != string.Empty");
+            Assert.IsNotNullOrEmpty(ProfileKeyId, "ProfileKeyId != null && ProfileKeyId != string.Empty");
             Assert.IsNotNullOrEmpty(Points, "Points != null && Points != string.Empty");
 
             if (!ruleContext.Args.KeyPhrases.Contains(Phrase, StringComparer.InvariantCultureIgnoreCase))
@@ -48,19 +48,19 @@ namespace DoctaCore.Feature.ContentScoring.Rules.Actions
             if (ruleContext.Args.ProfileKeyScores.ContainsKey(ProfileId))
             {
                 var profileKeys = ruleContext.Args.ProfileKeyScores[ProfileId];
-                if (profileKeys.ContainsKey(ProfileKey))
+                if (profileKeys.ContainsKey(ProfileKeyId))
                 {
-                    profileKeys[ProfileKey] += parsedPoints;
+                    profileKeys[ProfileKeyId] += parsedPoints;
                     ruleContext.Args.ProfileKeyScores[ProfileId] = profileKeys;
                 }
                 else
                 {
-                    ruleContext.Args.ProfileKeyScores[ProfileId].Add(ProfileKey, parsedPoints);
+                    ruleContext.Args.ProfileKeyScores[ProfileId].Add(ProfileKeyId, parsedPoints);
                 }
             }
             else
             {
-                var profileKeys = new Dictionary<string, int> { { ProfileKey, parsedPoints } };
+                var profileKeys = new Dictionary<string, int> { { ProfileKeyId, parsedPoints } };
                 ruleContext.Args.ProfileKeyScores.Add(ProfileId, profileKeys);
             }
         }
