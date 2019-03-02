@@ -57,19 +57,35 @@ In order for Docta Score to work properly, you will need to ensure that the _con
 
 ## Usage
 
-Provide documentation  about your module, how do the users use your module, where are things located, what do icons mean, are there any secret shortcuts etc.
 
-Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
+### Configuring the Mapping Rules (For Authors and Developers)
 
-![Hackathon Logo](images/hackathon.png?raw=true "Hackathon Logo")
+Docta Score includes a blank mapping rule out of the box, but this rule needs to be filled in before you can start letting Machine Learning do the content scoring work for you. 
 
-You can embed images of different formats too:
+Start by navigating to `/sitecore/system/Settings/Rules/Content Scoring/Rules/Map Key Phrases and Score Content` in the Content Editor. You should see the below in your window:
 
-![Deal With It](images/deal-with-it.gif?raw=true "Deal With It")
+![Mapping Rule](images/MappingRule.png?raw=true "Mapping Rule")
 
-And you can embed external images too:
+Click on "Edit rule" to pull up the Rule Editor. Click on each of the yellow/blue macros to provide the desired value for each.
 
-![Random](https://placeimg.com/480/240/any "Random")
+#### Filling in the Mapping
+
+The first macro defines the "key phrase" of the page that you want to map against. For example, a key term of a page about heart surgery may be "cardiology" or "cardio-vascular surgery". 
+
+The second macro defines the profile that you want to score against. Click on it and it will show you a tree with the available profiles for selection. These profiles are the top-level profiles that contain your profile keys and profile cards. 
+
+The third macro defines the profile key that you wish to increase the score of when the mapped "key phrase" is found in the page's content. Click on it and it will show you a tree with the available profiles and under them you will find the profile keys that you can select.
+
+The fourth and final macro defines the number of points that you wish to increase the specified profile key by when the mapped "key phrase" is found in the page's content.
+
+Once you've filled out all of the fields, click the "OK" button to close the window and then "Save" the item.
+
+#### Adding More Mappings
+
+One of the great things about Docta Score is that you can add as many mappings as you want to your rule! 
+
+In order to add a new mapping, click the "Edit rule" link to open the Rule Editor. Once open, in the right-hand pane at the top of the modal window you will see "Actions" available for selection. One of these actions will be the mapping rule, and will read "map the specific phrase of the content's key phrases...". Click on this rule action to add it to your rule, then follow the procedure outlined above in "Filling in the Mapping" to finish adding your new mapping. 
+
 
 ## Video
 
