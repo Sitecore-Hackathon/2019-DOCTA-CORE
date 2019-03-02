@@ -26,8 +26,8 @@
     <FieldsForCodeGen>Title,Blob,Shared,Unversioned,Default value,Validation,ValidationText,__Long description,__Short description,__Display name,__Hidden,__Read Only,__Sortorder</FieldsForCodeGen>
     <CodeGenTargetProject>DoctaCore.Project.Demo</CodeGenTargetProject>
     <CodeGenFile>Models.Generated.cs</CodeGenFile>
-    <BaseTransformFile>item.tt</BaseTransformFile>
-    <HeaderTransformFile>header.tt</HeaderTransformFile>
+    <BaseTransformFile>glassitem.tt</BaseTransformFile>
+    <HeaderTransformFile>glassheader.tt</HeaderTransformFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -86,23 +86,32 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Project\Demo\Page Types\Article\Content.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Project\Demo\Page Types\Article\Content\Introduction.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Project\Demo\Page Types\Article\Content\Main Content.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
-    <SitecoreItem Include="sitecore\templates\Project\Demo\Page Types\Article\Content\Title.item">
-      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
-      <ItemDeployment>AlwaysUpdate</ItemDeployment>
-    </SitecoreItem>
     <SitecoreItem Include="sitecore\templates\Project\Demo\Page Types\Base Page.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\Demo\Page Types\Base Page\__Standard Values.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\Demo\Page Types\Base Page\Content.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\Demo\Page Types\Base Page\Content\Featured Content.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+      <CodeGenData>type=IEnumerable&lt;DoctaCore.Project.Demo.Base_Page&gt;</CodeGenData>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\Demo\Page Types\Base Page\Content\Introduction.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\Demo\Page Types\Base Page\Content\Main Content.item">
+      <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
+      <ItemDeployment>AlwaysUpdate</ItemDeployment>
+    </SitecoreItem>
+    <SitecoreItem Include="sitecore\templates\Project\Demo\Page Types\Base Page\Content\Title.item">
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
@@ -119,8 +128,11 @@
     <CodeGenTemplate Include="..\..\..\..\lib\Code Generation Templates\GeneralExtensions.tt">
       <Link>Code Generation Templates\GeneralExtensions.tt</Link>
     </CodeGenTemplate>
-    <CodeGenTemplate Include="..\..\..\..\lib\Code Generation Templates\header.tt">
-      <Link>Code Generation Templates\header.tt</Link>
+    <CodeGenTemplate Include="..\..\..\..\lib\Code Generation Templates\glassheader.tt">
+      <Link>Code Generation Templates\glassheader.tt</Link>
+    </CodeGenTemplate>
+    <CodeGenTemplate Include="..\..\..\..\lib\Code Generation Templates\glassitem.tt">
+      <Link>Code Generation Templates\glassitem.tt</Link>
     </CodeGenTemplate>
     <CodeGenTemplate Include="..\..\..\..\lib\Code Generation Templates\Helpers.tt">
       <Link>Code Generation Templates\Helpers.tt</Link>
@@ -128,8 +140,8 @@
     <CodeGenTemplate Include="..\..\..\..\lib\Code Generation Templates\Inflector.tt">
       <Link>Code Generation Templates\Inflector.tt</Link>
     </CodeGenTemplate>
-    <CodeGenTemplate Include="..\..\..\..\lib\Code Generation Templates\item.tt">
-      <Link>Code Generation Templates\item.tt</Link>
+    <CodeGenTemplate Include="..\..\..\..\lib\Code Generation Templates\ItemPaths.tt">
+      <Link>Code Generation Templates\ItemPaths.tt</Link>
     </CodeGenTemplate>
     <CodeGenTemplate Include="..\..\..\..\lib\Code Generation Templates\StringExtensions.tt">
       <Link>Code Generation Templates\StringExtensions.tt</Link>

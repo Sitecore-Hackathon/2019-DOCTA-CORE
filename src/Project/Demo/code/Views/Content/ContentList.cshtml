@@ -1,0 +1,10 @@
+﻿@using DoctaCore.Project.Demo
+@using Glass.Mapper
+@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<DoctaCore.Project.Demo.Base_Page>
+
+<ul>
+    @foreach (var page in Model.Featured_Contents)
+    {
+        <li><a href="@page.Url">@page.Title</a></li>
+    }
+</ul>

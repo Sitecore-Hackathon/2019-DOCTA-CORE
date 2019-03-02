@@ -1,4 +1,4 @@
-<#+	
+﻿<#+	
 /// <summary>
 /// Gets the fuly qualified name of the object.
 /// </summary>
@@ -86,6 +86,11 @@ public static string GetPropertyName(SitecoreField field)
 	bool isFieldPlural = IsFieldPlural(field);
 	
 	return AsPropertyName(field.Name, isFieldPlural);
+}
+
+public static string ToCssClass(SitecoreField field)
+{
+    return GetPropertyName(field).ToLower().Replace('_','-');
 }
 
 /// <summary>

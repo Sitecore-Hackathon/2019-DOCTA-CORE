@@ -2,8 +2,8 @@
 version: 1
 id: {D57434BB-2A91-4964-83E1-8F6F47E88390}
 database: master
-path: /sitecore/templates/Project/Demo/Page Types/Article/Content
-parent: {0E7ADD70-1756-45B7-B0A3-95AF072FC68F}
+path: /sitecore/templates/Project/Demo/Page Types/Base Page/Content
+parent: {C14F0635-6F2F-4271-BE31-F79276042588}
 name: Content
 master: {00000000-0000-0000-0000-000000000000}
 template: {E269FBB5-3750-427A-9149-7AA950B49301}
@@ -13,7 +13,7 @@ created: 20190302T072035Z
 ----version----
 language: en
 version: 1
-revision: d4266ba6-9539-4900-a817-c4ef4fa60b54
+revision: ee9daf12-fbd1-466a-be91-4a7735f3e571
 
 ----field----
 field: {52807595-0F8F-4B20-8D2A-CB71D28C6103}
@@ -35,14 +35,14 @@ name: __Revision
 key: __revision
 content-length: 36
 
-d4266ba6-9539-4900-a817-c4ef4fa60b54
+ee9daf12-fbd1-466a-be91-4a7735f3e571
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20190302T072035Z
+20190302T094248Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by
