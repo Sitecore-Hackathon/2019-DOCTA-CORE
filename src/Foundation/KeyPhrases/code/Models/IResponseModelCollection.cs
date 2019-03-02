@@ -8,5 +8,6 @@ namespace DoctaCore.Foundation.KeyPhrases.Models
     public interface IResponseModelCollection<out TModel> : IEnumerable<TModel> 
         where TModel : IResponseModel
     {
+        List<string> Error { get; set; }
     }
 }

@@ -30,7 +30,7 @@ namespace DoctaCore.Feature.KeyPhraseExtraction
                     {
                         var document = new RequestDocument();
                         document.Text = searchResult.Document.Content;
-                        document.Id = item.ID.Guid;
+                        document.ItemId = item.ID.Guid;
                         document.Language = item.Language.Name;
 
                         results.Add(document);

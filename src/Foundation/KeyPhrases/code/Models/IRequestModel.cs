@@ -8,5 +8,8 @@ namespace DoctaCore.Foundation.KeyPhrases.Models
 {
     public interface IRequestModel
     {
+        Guid ItemId { get; set; }
+        string Language { get; set; }
+        string Text { get; set; }
     }
 }
