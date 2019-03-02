@@ -1,0 +1,80 @@
+----item----
+version: 1
+id: {001A35FD-0110-4366-8F6C-5F34FE16A5A8}
+database: master
+path: /sitecore/content/Docta Core/Home/bladder-infections
+parent: {37F0A889-EE32-41F8-90AC-339934022131}
+name: bladder-infections
+master: {00000000-0000-0000-0000-000000000000}
+template: {0E7ADD70-1756-45B7-B0A3-95AF072FC68F}
+templatekey: Article
+created: 20190302T124428Z
+
+----version----
+language: en
+version: 1
+revision: 53fa0cb6-08d8-4cd9-9f3a-76556c60e2f9
+
+----field----
+field: {714309BB-79C4-4491-A709-CD790D4B59FB}
+name: Title
+key: title
+content-length: 52
+
+Bladder Infections: UTI Causes, Symptoms, Treatments
+----field----
+field: {66F51940-5F6F-404B-8DD9-81DEE8E6BB07}
+name: Introduction
+key: introduction
+content-length: 443
+
+<h2>What Is a Urinary Tract Infection (UTI)?</h2><p>A urinary tract infection (UTI) occurs when one or more parts of the urinary system (kidneys, ureters, bladder, or urethra) become infected with a pathogen (most frequently, bacteria). UTIs most commonly occur in females; about 50% of all females get a UTI during their lifetime. Many UTIs are not serious but if infection reaches the kidneys, serious illness, and even death, can occur.</p>
+----field----
+field: {07B7AB11-8EDF-4EDB-A1CC-7C981B2DEE04}
+name: Main Content
+key: main content
+content-length: 1268
+
+<h2>What Are UTI Symptoms? Bladder Infection</h2>
+<p>Bladder infections are the most common type of UTI. Some individuals may have few or no symptoms; however, the usual symptoms include dysuria (pain or burning during urination), low abdominal pain, and/or urine that is cloudy or smells bad or unusual.</p>
+<h2>What Are UTI Symptoms? Kidney Infection</h2>
+<p>Some bladder infections do not resolve and get worse with the pathogens moving up (retrograde) the ureters to the kidneys. Symptoms may include those listed for bladder infections on the pervious slide, but often include other symptoms such as pain in the lower back (flank pain on one or both sides), fever, chills, and nausea and/or vomiting.</p>
+<h2>Who's at Risk of UTI Complications?</h2>
+<p>Although a bladder infection is not a medical emergency, the following individuals have a higher risk for UTI complications such as infection spread to the kidneys or elsewhere in the body:</p>
+<ul>
+<li>Pregnant women</li>
+<li>People who have diabetes</li>
+<li>Individuals with kidney problems such as kidney stones or blockages </li>
+<li>Elderly individuals </li>
+<li>Immunocompromised patients</li>
+<li>Men with enlarged prostates</li>
+<li>People with urinary retention and/or indwelling catheters</li>
+</ul>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T124428Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+53fa0cb6-08d8-4cd9-9f3a-76556c60e2f9
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T124731Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

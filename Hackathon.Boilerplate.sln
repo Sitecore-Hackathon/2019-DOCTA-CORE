@@ -44,12 +44,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{D27C83
 		documentation\images\hackathon.png = documentation\images\hackathon.png
 	EndProjectSection
 EndProject
-Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "DoctaCore.Product.Demo.Master", "src\Project\Demo\serialization\DoctaCore.Product.Demo.Master.scproj", "{728AA11F-94D0-4E03-B4FE-5F81FA53395D}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".tds", ".tds", "{8F9606C2-992D-4DF1-84C0-2BE02FB28843}"
 	ProjectSection(SolutionItems) = preProject
 		TdsGlobal.config = TdsGlobal.config
 	EndProjectSection
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "DoctaCore.Project.Demo.Master", "src\Project\Demo\serialization\DoctaCore.Project.Demo.Master\DoctaCore.Project.Demo.Master.scproj", "{728AA11F-94D0-4E03-B4FE-5F81FA53395D}"
+EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "DoctaCore.Project.Demo.Content", "src\Project\Demo\serialization\DoctaCore.Project.Demo.Content\DoctaCore.Project.Demo.Content.scproj", "{7958D375-57F4-4D54-9208-8D1CF6A5F72D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +81,12 @@ Global
 		{728AA11F-94D0-4E03-B4FE-5F81FA53395D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{728AA11F-94D0-4E03-B4FE-5F81FA53395D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{728AA11F-94D0-4E03-B4FE-5F81FA53395D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{7958D375-57F4-4D54-9208-8D1CF6A5F72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7958D375-57F4-4D54-9208-8D1CF6A5F72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7958D375-57F4-4D54-9208-8D1CF6A5F72D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7958D375-57F4-4D54-9208-8D1CF6A5F72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7958D375-57F4-4D54-9208-8D1CF6A5F72D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7958D375-57F4-4D54-9208-8D1CF6A5F72D}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,9 +102,10 @@ Global
 		{C8227E82-EA27-44B0-80F2-041FF91F059F} = {D66EF2B7-F822-4FDB-A07C-0284076CA6C2}
 		{D27C83D2-2EAF-4E44-A1ED-2B3C2EBB5854} = {DAFED8F5-6CBD-4384-AAD6-DC3BCCF24911}
 		{728AA11F-94D0-4E03-B4FE-5F81FA53395D} = {F53DB067-16E1-4A16-9BA8-2936847DEBA7}
+		{7958D375-57F4-4D54-9208-8D1CF6A5F72D} = {F53DB067-16E1-4A16-9BA8-2936847DEBA7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
 	EndGlobalSection
 EndGlobal

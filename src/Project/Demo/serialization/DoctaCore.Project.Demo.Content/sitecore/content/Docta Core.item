@@ -1,0 +1,45 @@
+----item----
+version: 1
+id: {9A5E6744-9C32-4AEF-A8C7-029782B042A7}
+database: master
+path: /sitecore/content/Docta Core
+parent: {0DE95AE4-41AB-4D01-9EB0-67441B7C2450}
+name: Docta Core
+master: {00000000-0000-0000-0000-000000000000}
+template: {FAF4D312-B07C-404E-89EE-CA43B8C9A015}
+templatekey: Site Root
+created: 20190302T071852Z
+
+----version----
+language: en
+version: 1
+revision: 737db4df-1844-4586-b4e9-57468dd0245a
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T071852Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+737db4df-1844-4586-b4e9-57468dd0245a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T071852Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin

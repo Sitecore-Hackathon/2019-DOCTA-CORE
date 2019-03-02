@@ -1,0 +1,73 @@
+----item----
+version: 1
+id: {43D292F1-ABD4-4E8F-991F-52E795354B34}
+database: master
+path: /sitecore/content/Docta Core/Home/amenorrhea
+parent: {37F0A889-EE32-41F8-90AC-339934022131}
+name: amenorrhea
+master: {00000000-0000-0000-0000-000000000000}
+template: {0E7ADD70-1756-45B7-B0A3-95AF072FC68F}
+templatekey: Article
+created: 20190302T123728Z
+
+----version----
+language: en
+version: 1
+revision: 41f4ab36-915d-4b61-8be3-245bf04d2fdf
+
+----field----
+field: {714309BB-79C4-4491-A709-CD790D4B59FB}
+name: Title
+key: title
+content-length: 10
+
+Amenorrhea
+----field----
+field: {07B7AB11-8EDF-4EDB-A1CC-7C981B2DEE04}
+name: Main Content
+key: main content
+content-length: 2868
+
+<ul>
+    <li>Amenorrhea refers to the absence of menstrual periods; it may be either primary (meaning a woman never developed menstrual periods) or secondary (absence of menstrual periods in a woman who was previously menstruating).</li>
+    <li>Genetic or inborn conditions are the most common causes of primary amenorrhea.</li>
+    <li>Amenorrhea may result from disorders of the ovaries, pituitary gland, hypothalamus, or uterus.</li>
+   <li>Intensive exercising, extreme weight loss, physical illness, and stress can all result in amenorrhea.</li>
+    <li>Amenorrhea is a symptom and not a disease in itself, so amenorrhea can be prevented only to the extent that the underlying cause can be prevented.</li>
+    <li>Infertility and possible bone loss (osteoporosis) are complications of amenorrhea.</li>
+    <li>Treatments may include surgical correction of anatomical abnormalities, medications or hormone therapies, and treatment of any underlying conditions responsible for amenorrhea.</li>
+    <li>The outlook for amenorrhea varies according to the cause of the amenorrhea.</li>
+</ul>
+<h2>Definition of primary and secondary amenorrhea</h2>
+<p>Amenorrhea is the medical term for the absence of menstrual periods, either on a permanent or temporary basis. Amenorrhea can be classified as primary or secondary. In primary amenorrhea, menstrual periods have never begun (by age 16), whereas secondary amenorrhea is defined as the absence of menstrual periods for three consecutive cycles or a time period of more than six months in a woman who was previously menstruating.</p>
+<p>The menstrual cycle can be influenced by many internal factors such as transient changes in hormonal levels, stress, and illness, as well as external or environmental factors. Missing one menstrual period is rarely a sign of a serious problem or an underlying medical condition, but amenorrhea of longer duration may signal the presence of a disease or chronic condition.</p>
+<h2>What causes amenorrhea?</h2>
+<p>The normal menstrual cycle occurs because of changing levels of hormones made and secreted by the ovaries. The ovaries respond to hormonal signals from the pituitary gland located at the brain's base, which, in turn, is controlled by hormones produced in the hypothalamus of the brain. Disorders that affect any component of this regulatory cycle can lead to amenorrhea. However, a common cause of amenorrhea in young females sometimes overlooked or misunderstood by the individual and others, is an undiagnosed pregnancy. Amenorrhea in pregnancy is a normal physiological function. Occasionally, the same underlying problem can cause or contribute to either primary or secondary amenorrhea. For example, hypothalamic problems, anorexia or extreme exercise can play a major role in causing amenorrhea depending on the person's age and if she has experienced menarche.</p>
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20190302T123728Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+41f4ab36-915d-4b61-8be3-245bf04d2fdf
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20190302T124401Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
