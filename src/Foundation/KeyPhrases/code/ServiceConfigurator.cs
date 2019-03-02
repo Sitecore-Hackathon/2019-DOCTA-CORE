@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using DoctaCore.Foundation.KeyPhrases.Models;
 using Microsoft.Extensions.DependencyInjection;
 using Sitecore.DependencyInjection;
 
@@ -11,7 +12,7 @@ namespace DoctaCore.Foundation.KeyPhrases
     {
         public void Configure(IServiceCollection serviceCollection)
         {
-            serviceCollection.AddTransient<IItemRetriever, DefaultItemRetriever>();
+            serviceCollection.AddSingleton<IItemRetriever, DefaultItemRetriever>();
         }
     }
 }
