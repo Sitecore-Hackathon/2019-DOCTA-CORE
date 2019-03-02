@@ -19,33 +19,30 @@ Docta Score works by sending item textual content stored in the Content Search i
 
 The user-configured mapping rules enable the user to add any number of mappings for key phrases, and supports setting the number of points that a given mapping adds to the score for the specified profile key in the item's Tracking field. For example, a content author of the heart surgey section of a healthcare website could add a mapping for the key phrase "cardiology" with a score of 20 points, and separately add a mapping for the key phrase "cardio-vascular surgery" for 40 points. This flexibility gives authors the ability to control the default key phrase mappings for their content at a granular level.
 
+*Note: it is worth mentioning that using Azure Cognitive Services is optional, and that Azure Cognitive Services is just the default. The logic for communicating with Azure Cognitive Services is in a pipeline processor that can be replaced with another that communicates with a different service, should you so choose.*
+
 ## Pre-requisites
 
 Docta Core has no dependencies on other modules. 
 
 ## Installation
 
-Provide detailed instructions on how to install the module, and include screenshots where necessary.
+Perform the following steps to install the module:
 
-1. Use the Sitecore Installation wizard to install the [package](#link-to-package)
-2. Smile
+1. Use the Sitecore Installation Wizard to install the [package](#link-to-package)
+2. (Optional) Use the Sitecore Installation Wizard to install the [demo package](#link-to-demo-package)
+3. (Not optional) Smile for the Docta!
 
 ## Configuration
 
-How do you configure your module once it is installed? Are there items that need to be updated with settings, or maybe config files need to have keys updated?
+Once you have installed the module, there is a little bit of configuration work that you'll need to do in order to enable the application to connect with Azure Cognitive Services. The first thing that you will need to do is head over to [Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) and sign up or sign in. Once you do that, follow Azure's documentation for setting up an API key and a Text Analytics service in your region. Copy the endpoint URL and the API key to your configuration files as follows: 
 
-Remember you are using Markdown, you can provide code samples too:
 
 ```xml
 <?xml version="1.0"?>
-<!--
-  Purpose: Configuration settings for my hackathon module
--->
 <configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
   <sitecore>
-    <settings>
-      <setting name="MyModule.Setting" value="Hackathon" />
-    </settings>
+    <!-- TODO: Add in the configuration -->
   </sitecore>
 </configuration>
 ```
