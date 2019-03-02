@@ -204,6 +204,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AzureKeyPhraseResponseHandler.cs" />
+    <Compile Include="Models\Document.cs" />
+    <Compile Include="Models\DocumentCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shell\Framework\Commands\GetKeyPhrases.cs" />
     <Content Include="App_Config\Include\Feature\KeyPhraseExtraction\DoctaCore.Feature.KeyPhraseExtraction.Commands.config" />
