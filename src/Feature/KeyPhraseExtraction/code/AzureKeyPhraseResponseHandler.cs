@@ -5,6 +5,7 @@ using System.Web;
 using DoctaCore.Feature.KeyPhraseExtraction.Pipelines.HandleKeyPhrasesResponse;
 using DoctaCore.Foundation.KeyPhrases;
 using DoctaCore.Foundation.KeyPhrases.Models;
+using DoctaCore.Foundation.KeyPhrases.Pipelines.HandleKeyPhrasesResponse;
 
 namespace DoctaCore.Feature.KeyPhraseExtraction
 {

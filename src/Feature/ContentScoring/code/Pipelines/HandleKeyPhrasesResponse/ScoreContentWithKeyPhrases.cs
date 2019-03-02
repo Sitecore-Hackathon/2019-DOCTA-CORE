@@ -21,8 +21,7 @@ namespace DoctaCore.Feature.ContentScoring.Pipelines.HandleKeyPhrasesResponse
         }
 
 
-        public void Process(
-            IHandleKeyPhrasesResponsePipelineArgs<ResponseDocumentCollection, ResponseDocument> args)
+        public void Process(HandleKeyPhrasesResponsePipelineArgs args)
         {
             var database = _factory.GetDatabase("master"); // TODO: move this to config and inject
 

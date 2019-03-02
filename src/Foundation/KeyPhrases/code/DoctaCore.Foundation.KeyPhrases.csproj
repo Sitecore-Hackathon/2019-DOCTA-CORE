@@ -171,7 +171,7 @@
     <Compile Include="Models\RequestDocumentCollection.cs" />
     <Compile Include="Models\ResponseDocument.cs" />
     <Compile Include="Models\ResponseDocumentCollection.cs" />
-    <Compile Include="Pipelines\HandleKeyPhrasesResponse\IHandleKeyPhrasesResponsePipelineArgs.cs" />
+    <Compile Include="Pipelines\HandleKeyPhrasesResponse\HandleKeyPhrasesResponsePipelineArgs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceConfigurator.cs" />
     <Content Include="App_Config\Include\Foundation\DoctaCore.Foundation.KeyPhrases.Pipelines.config" />
