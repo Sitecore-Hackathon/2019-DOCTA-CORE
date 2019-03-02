@@ -33,10 +33,10 @@ namespace DoctaCore.Foundation.KeyPhrases
             ResponseHandler = responseHandler;
         }
 
-        public void Execute()
+        public void Execute(Item startItem)
         {
             // get items
-            var items = ItemRetriever.GetItems();
+            var items = ItemRetriever.GetItems(startItem);
             // items -> request models
             var requestModelCollection = RequestParser.Convert(items);
             // serialize request models
