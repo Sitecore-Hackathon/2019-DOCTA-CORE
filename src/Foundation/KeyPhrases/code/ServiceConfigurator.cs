@@ -11,7 +11,7 @@ namespace DoctaCore.Foundation.KeyPhrases
     {
         public void Configure(IServiceCollection serviceCollection)
         {
-            throw new NotImplementedException();
+            serviceCollection.AddTransient<IItemRetriever, DefaultItemRetriever>();
         }
     }
 }
