@@ -41,7 +41,7 @@ namespace DoctaCore.Feature.ContentScoring.Rules.Actions
 
             if (!Guid.TryParse(ProfileId, out var parsedProfileItemId))
             {
-                Log.Error($"The specified profile item ID must be a valid guid format. Rule execution terminating for item {ruleContext.Item.ID}", this);
+                Log.Error($"The profile item ID must be in a valid guid format. Rule execution terminating for item {ruleContext.Item.ID}", this);
                 return;
             }
 
