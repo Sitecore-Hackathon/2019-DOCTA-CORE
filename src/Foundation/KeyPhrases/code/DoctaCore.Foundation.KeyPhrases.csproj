@@ -127,6 +127,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseResponseHandler.cs" />
     <Compile Include="IHandleResponse.cs" />
     <Compile Include="IItemRetriever.cs" />
     <Compile Include="IKeyPhrasesManager.cs" />
@@ -134,6 +135,7 @@
     <Compile Include="ITypeConverter.cs" />
     <Compile Include="KeyPhrasesManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="App_Config\Include\Foundation\DoctaCore.Foundation.KeyPhrases.Pipelines.config" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <Content Include="web.config" />
