@@ -35,7 +35,11 @@ Perform the following steps to install the module:
 
 ## Configuration
 
-Once you have installed the module, there is a little bit of configuration work that you'll need to do in order to enable the application to connect with Azure Cognitive Services. The first thing that you will need to do is head over to [Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) and sign up or sign in. Once you do that, follow Azure's documentation for setting up an API key and a Text Analytics service in your region. Copy the endpoint URL and the API key to your configuration files as follows: 
+Once you have installed the module, there is a little bit of configuration work that you'll need to do to get up and running.
+
+### Configure Azure Cognitive Services Connection Details
+
+In order to enable the application to connect with Azure Cognitive Services. The first thing that you will need to do is head over to [Azure Cognitive Services](https://azure.microsoft.com/en-us/services/cognitive-services/) and sign up or sign in. Once you do that, follow Azure's documentation for setting up an API key and a Text Analytics service in your region. Copy the endpoint URL and the API key to your configuration files as follows: 
 
 
 ```xml
@@ -46,6 +50,10 @@ Once you have installed the module, there is a little bit of configuration work 
   </sitecore>
 </configuration>
 ```
+
+### Configure Content Search
+
+In order for Docta Score to work properly, you will need to ensure that the _content default Computed Index Field is set to persistent storage. If you are using Solr, you can do this by updating the managed-schema.xml file.  
 
 ## Usage
 
