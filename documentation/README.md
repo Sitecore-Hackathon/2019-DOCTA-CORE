@@ -19,6 +19,8 @@ Docta Score works by sending item textual content stored in the Content Search i
 
 The user-configured mapping rules enable the user to add any number of mappings for key phrases, and supports setting the number of points that a given mapping adds to the score for the specified profile key in the item's Tracking field. For example, a content author of the heart surgey section of a healthcare website could add a mapping for the key phrase "cardiology" with a score of 20 points, and separately add a mapping for the key phrase "cardio-vascular surgery" for 40 points. This flexibility gives authors the ability to control the default key phrase mappings for their content at a granular level.
 
+Content authors don't have to know all of the key phrases that they plan to map against ahead of time. The module saves the key phrases from each page (currently in Sitecore on the page items, but this is something that we had hoped to replace before our submission - time was short so we had to leave this in, rather than adding a custom database/table and an admin page for the author to view in report-form). In the current implementation, authors can view these key phrases on the sample page items themselves.   
+
 *Note: it is worth mentioning that using Azure Cognitive Services is optional, and that Azure Cognitive Services is just the default. The logic for communicating with Azure Cognitive Services is in a pipeline processor that can be replaced with another that communicates with a different service, should you so choose.*
 
 ## Pre-requisites
