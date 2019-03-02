@@ -1,8 +1,23 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ContentScoring", "ContentScoring", "{AA636E11-425F-4BF6-8B65-CCA7207B0A65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctaCore.Feature.ContentScoring", "src\Feature\ContentScoring\code\DoctaCore.Feature.ContentScoring.csproj", "{22084016-014A-4170-A0A1-1CC58C8EA1EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Rules", "Rules", "{DB58A531-860A-443F-B68A-03F2C35B6033}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctaCore.Foundation.Rules", "src\Foundation\Rules\code\DoctaCore.Foundation.Rules.csproj", "{93561427-5AAA-4468-9C85-AF6B5CA7D2E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{F53DB067-16E1-4A16-9BA8-2936847DEBA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctaCore.Project.Demo", "src\Project\Demo\code\DoctaCore.Project.Demo.csproj", "{E0A6A6DE-53A1-4B38-A225-283E03835589}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KeyPhraseExtraction", "KeyPhraseExtraction", "{D66EF2B7-F822-4FDB-A07C-0284076CA6C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctaCore.Feature.KeyPhraseExtraction", "src\Feature\KeyPhraseExtraction\code\DoctaCore.Feature.KeyPhraseExtraction.csproj", "{C8227E82-EA27-44B0-80F2-041FF91F059F}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{17DD5718-6E13-4F2C-9738-B410396D4552}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{4FDA1DCD-D33E-447E-91C1-F4AE818E2CF0}"
@@ -30,10 +45,40 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{D27C83
 	EndProjectSection
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22084016-014A-4170-A0A1-1CC58C8EA1EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22084016-014A-4170-A0A1-1CC58C8EA1EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22084016-014A-4170-A0A1-1CC58C8EA1EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22084016-014A-4170-A0A1-1CC58C8EA1EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93561427-5AAA-4468-9C85-AF6B5CA7D2E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93561427-5AAA-4468-9C85-AF6B5CA7D2E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93561427-5AAA-4468-9C85-AF6B5CA7D2E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93561427-5AAA-4468-9C85-AF6B5CA7D2E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A6A6DE-53A1-4B38-A225-283E03835589}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A6A6DE-53A1-4B38-A225-283E03835589}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A6A6DE-53A1-4B38-A225-283E03835589}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A6A6DE-53A1-4B38-A225-283E03835589}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8227E82-EA27-44B0-80F2-041FF91F059F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8227E82-EA27-44B0-80F2-041FF91F059F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8227E82-EA27-44B0-80F2-041FF91F059F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8227E82-EA27-44B0-80F2-041FF91F059F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{AA636E11-425F-4BF6-8B65-CCA7207B0A65} = {17DD5718-6E13-4F2C-9738-B410396D4552}
+		{22084016-014A-4170-A0A1-1CC58C8EA1EA} = {AA636E11-425F-4BF6-8B65-CCA7207B0A65}
+		{DB58A531-860A-443F-B68A-03F2C35B6033} = {4FDA1DCD-D33E-447E-91C1-F4AE818E2CF0}
+		{93561427-5AAA-4468-9C85-AF6B5CA7D2E9} = {DB58A531-860A-443F-B68A-03F2C35B6033}
+		{F53DB067-16E1-4A16-9BA8-2936847DEBA7} = {15D97D61-D597-42EC-B7E9-E9EC8130E630}
+		{E0A6A6DE-53A1-4B38-A225-283E03835589} = {F53DB067-16E1-4A16-9BA8-2936847DEBA7}
+		{D66EF2B7-F822-4FDB-A07C-0284076CA6C2} = {17DD5718-6E13-4F2C-9738-B410396D4552}
+		{C8227E82-EA27-44B0-80F2-041FF91F059F} = {D66EF2B7-F822-4FDB-A07C-0284076CA6C2}
 		{D27C83D2-2EAF-4E44-A1ED-2B3C2EBB5854} = {DAFED8F5-6CBD-4384-AAD6-DC3BCCF24911}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
