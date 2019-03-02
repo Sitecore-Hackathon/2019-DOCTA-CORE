@@ -7,5 +7,7 @@ namespace DoctaCore.Feature.KeyPhraseExtraction.Models
 {
     public class ResponseDocument
     {
+        public string Id { get; set; }
+        public IEnumerable<string> KeyPhrases { get; set; }
     }
 }
