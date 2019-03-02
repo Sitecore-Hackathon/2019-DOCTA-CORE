@@ -17,7 +17,7 @@ namespace DoctaCore.Feature.KeyPhraseExtraction.Shell.Framework.Commands
     {
         public override void Execute(CommandContext context)
         {
-            var manager = ServiceLocator.ServiceProvider.GetService<IKeyPhrasesManager<RequestDocumentCollection, RequestDocument, ResponseDocumentCollection, ResponseDocument>>();
+            var manager = ServiceLocator.ServiceProvider.GetService<IKeyPhrasesManager>();
             var contextItem = context.Items.FirstOrDefault();
 
             manager.Execute(contextItem);

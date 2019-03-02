@@ -8,8 +8,7 @@ using Sitecore.Data.Items;
 
 namespace DoctaCore.Foundation.KeyPhrases
 {
-    public class KeyPhrasesManager<TRequestModelCollection, TRequestModel, TResponseModelCollection, TResponseModel> : IKeyPhrasesManager<TRequestModelCollection, TRequestModel, TResponseModelCollection, TResponseModel>
-        where TResponseModelCollection : IEnumerable<TResponseModel>
+    public class KeyPhrasesManager<TRequestModelCollection, TRequestModel, TResponseModelCollection, TResponseModel> : IKeyPhrasesManager
     {
         protected IItemRetriever ItemRetriever { get; set; }
         protected ITypeConverter<IEnumerable<Item>, TRequestModelCollection> RequestParser { get; set; }

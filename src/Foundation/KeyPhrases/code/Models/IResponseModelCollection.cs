@@ -5,9 +5,9 @@ using System.Web;
 
 namespace DoctaCore.Foundation.KeyPhrases.Models
 {
-    public interface IResponseModelCollection<out TModel> : IEnumerable<TModel> 
-        where TModel : IResponseModel
+    public interface IResponseModelCollection
     {
+        List<IResponseModel> Documents { get; set; }
         List<string> Error { get; set; }
     }
 }

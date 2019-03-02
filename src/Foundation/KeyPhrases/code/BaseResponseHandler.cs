@@ -7,7 +7,6 @@ using Sitecore.Pipelines;
 namespace DoctaCore.Foundation.KeyPhrases
 {
     public abstract class BaseResponseHandler<TResponseModelCollection, TResponseModel, TPipelineArgs> : IHandleResponse<TResponseModelCollection, TResponseModel>
-        where TResponseModelCollection : IEnumerable<TResponseModel>
         where TPipelineArgs : PipelineArgs
     {
         public virtual void DoHandleResponse(TResponseModelCollection collection)

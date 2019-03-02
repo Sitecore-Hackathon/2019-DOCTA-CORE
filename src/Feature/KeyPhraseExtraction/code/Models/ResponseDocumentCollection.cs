@@ -7,8 +7,9 @@ using DoctaCore.Foundation.KeyPhrases.Models;
 
 namespace DoctaCore.Feature.KeyPhraseExtraction.Models
 {
-    public class ResponseDocumentCollection : List<ResponseDocument>, IResponseModelCollection<ResponseDocument>
+    public class ResponseDocumentCollection
     {
+        public List<ResponseDocument> Documents { get; set; }
         public List<string> Error { get; set; }
     }
 }

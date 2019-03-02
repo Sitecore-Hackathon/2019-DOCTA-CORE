@@ -34,7 +34,10 @@ namespace DoctaCore.Feature.KeyPhraseExtraction
                         document.Id = item.ID.Guid;
                         document.Language = item.Language.Name;
 
-                        results.Documents.Add(document);
+                        if (!results.Documents.Any(x => x.Id == document.Id))
+                        {
+                            results.Documents.Add(document);
+                        }
                     }
                 }
             }

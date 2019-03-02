@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace DoctaCore.Foundation.KeyPhrases
 {
     public interface IHandleResponse<in TResponseModelCollection, TResponseModel>
-        where TResponseModelCollection : IEnumerable<TResponseModel>
     {
         void DoHandleResponse(TResponseModelCollection collection);
     }

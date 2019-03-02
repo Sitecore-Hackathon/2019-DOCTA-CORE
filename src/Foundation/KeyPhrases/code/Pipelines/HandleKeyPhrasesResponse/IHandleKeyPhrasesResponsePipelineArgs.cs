@@ -7,7 +7,6 @@ using DoctaCore.Foundation.KeyPhrases.Models;
 namespace DoctaCore.Foundation.KeyPhrases.Pipelines.HandleKeyPhrasesResponse
 {
     public interface IHandleKeyPhrasesResponsePipelineArgs<TModelCollection, TModel> 
-        where TModelCollection : IResponseModelCollection<TModel>
         where TModel : IResponseModel
     {
         TModelCollection Collection { get; set; }

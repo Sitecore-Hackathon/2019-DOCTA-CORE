@@ -22,11 +22,11 @@ namespace DoctaCore.Feature.ContentScoring.Pipelines.HandleKeyPhrasesResponse
 
 
         public void Process(
-            IHandleKeyPhrasesResponsePipelineArgs<IResponseModelCollection<IResponseModel>, IResponseModel> args)
+            IHandleKeyPhrasesResponsePipelineArgs<IResponseModelCollection, IResponseModel> args)
         {
             var database = _factory.GetDatabase("master"); // TODO: move this to config and inject
 
-            foreach (var model in args.Collection)
+            foreach (var model in args.Collection.Documents)
             {
                 var scoreContentArgs = new ScoreContentPipelineArgs()
                 {
