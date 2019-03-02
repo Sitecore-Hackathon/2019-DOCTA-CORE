@@ -5,6 +5,7 @@ using System.Web;
 using DoctaCore.Feature.KeyPhraseExtraction.Models;
 using DoctaCore.Foundation.KeyPhrases;
 using Microsoft.Extensions.DependencyInjection;
+using Sitecore.Data.Items;
 using Sitecore.DependencyInjection;
 
 namespace DoctaCore.Feature.KeyPhraseExtraction
@@ -14,6 +15,7 @@ namespace DoctaCore.Feature.KeyPhraseExtraction
         public void Configure(IServiceCollection serviceCollection)
         {
             serviceCollection.AddSingleton<IHandleResponse<ResponseDocumentCollection, ResponseDocument>,AzureKeyPhraseResponseHandler>();
+            serviceCollection.AddSingleton<ITypeConverter<IEnumerable<Item>, RequestDocumentCollection>, RequestDocumentTypeConverter>();
 
         }
     }
