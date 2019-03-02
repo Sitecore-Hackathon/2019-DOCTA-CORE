@@ -28,8 +28,11 @@ namespace DoctaCore.Feature.ContentScoring.Pipelines.HandleKeyPhrasesResponse
 
             foreach (var model in args.Collection.Documents)
             {
+                if (!ID.TryParse(model.ItemId, out var id))
+                {
+                    return;
+                }
 
-                var id = new ID(model.ItemId);
                 var scoreContentArgs = new ScoreContentPipelineArgs()
                 {
                     Item = database.GetItem(id),
