@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Web;
 using System.Web.Script.Serialization;
 using Newtonsoft.Json;
+using Sitecore;
+using Sitecore.Configuration;
 using Sitecore.ContentSearch;
 using Sitecore.ContentSearch.Linq;
 using Sitecore.ContentSearch.SearchTypes;
@@ -31,7 +33,7 @@ namespace DoctaCore.Feature.KeyPhraseExtraction.Shell.Framework.Commands
     {
         public override void Execute(CommandContext context)
         {
-            Sitecore.Context.ClientPage.ClientResponse.Alert("Testing my button");
+            Context.ClientPage.ClientResponse.Alert("Testing my button");
             var contextItem = context.Items.FirstOrDefault();
 
             var inputDocumentList = new InputDocumentsList
@@ -41,12 +43,13 @@ namespace DoctaCore.Feature.KeyPhraseExtraction.Shell.Framework.Commands
 
             var inputDocumentsList = CreateInputDocumentList(contextItem, inputDocumentList);
 
-            Task<HttpResponseMessage> task =
-                Task.Run<HttpResponseMessage>(async () => await ExecuteRequest(inputDocumentsList));
+            var task =
+                Task.Run(async () => await ExecuteRequest(inputDocumentsList));
         }
 
         private InputDocumentsList CreateInputDocumentList(Item contextItem, InputDocumentsList inputDocumentsList)
         {
+            // TODO: the logic for traversing and getting the item should change long term to support batching and max performance (this code is temporary for POC)
             foreach (Item contextItemChild in contextItem.Children)
             {
                 if (contextItemChild.HasChildren)
@@ -66,7 +69,7 @@ namespace DoctaCore.Feature.KeyPhraseExtraction.Shell.Framework.Commands
 
         private InputDocumentsList AddItemToDocumentList(Item contextItem, InputDocumentsList inputDocumentsList)
         {
-            using (IProviderSearchContext searchContext = ContentSearchManager.GetIndex("sitecore_master_index")
+            using (var searchContext = ContentSearchManager.GetIndex("sitecore_master_index")
                 .CreateSearchContext(SearchSecurityOptions.DisableSecurityCheck))
             {
                 var resultItem = searchContext.GetQueryable<SearchResultItem>()
@@ -102,43 +105,54 @@ namespace DoctaCore.Feature.KeyPhraseExtraction.Shell.Framework.Commands
 
             var uri = "https://westus.api.cognitive.microsoft.com/text/analytics/v2.0/keyPhrases?" + queryString;
 
-            HttpResponseMessage response;
             //var sample = new {documents= new []{new {language = "en", id = "1", text = "Hello world. This is some input text that I love."}}};
 
             // Request body
-            JavaScriptSerializer serializer = new JavaScriptSerializer();
-            byte[] byteData = Encoding.UTF8.GetBytes(serializer.Serialize(inputDocumetsList));
+            var serializer = new JavaScriptSerializer();
+            var byteData = Encoding.UTF8.GetBytes(serializer.Serialize(inputDocumetsList));
 
             using (var content = new ByteArrayContent(byteData))
             {
                 content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-                response = await client.PostAsync(uri, content);
+                var response = await client.PostAsync(uri, content);
 
                 var keyPhrasesStream = response.Content.ReadAsStringAsync();
                 var keyPhrasesJson = JsonConvert.DeserializeObject<DocumentList>(keyPhrasesStream.Result);
+                // TODO: remove log call or change to debug - this is here for POC and testing only
                 Log.Info(keyPhrasesStream.Result, keyPhrasesStream);
                 UpdateItemsWithKeyPhrases(keyPhrasesJson);
+                PerformContentScoring(keyPhrasesJson);
                 return response;
             }
         }
 
         private static void UpdateItemsWithKeyPhrases(DocumentList documentList)
         {
-            if (documentList != null && documentList.Documents.Any())
+            if (documentList == null || !documentList.Documents.Any())
+            {
+                return;
+            }
+
+            using (new BulkUpdateContext())
             {
                 foreach (var documentListDocument in documentList.Documents)
                 {
-                    Sitecore.Data.Database masterDB = Sitecore.Configuration.Factory.GetDatabase("master");
-                    Sitecore.Data.Items.Item item = masterDB.GetItem(new ID(documentListDocument.Id));
+                    var masterDB = Factory.GetDatabase("master");
+                    var item = masterDB.GetItem(new ID(documentListDocument.Id));
                     using (new SecurityDisabler())
                     {
                         using (new EditContext(item))
                         {
-                            item["Key Phrases"] = string.Join(",",documentListDocument.KeyPhrases);
+                            item["Key Phrases"] = string.Join(",", documentListDocument.KeyPhrases);
                         }
                     }
                 }
             }
+        }
+
+        private static void PerformContentScoring(DocumentList documentList)
+        {
+            throw new NotImplementedException();
         }
     }
 
