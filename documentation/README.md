@@ -137,4 +137,5 @@ It is worth noting that Docta Score was specifically designed to be extensible, 
 
 ## Video
 
-You can find a video overview of our module in this documentation folder
+You can find a video overview of our module in this documentation folder (`.\DoctaCore.mp4`) as well as an update video (`.\DoctaCore2-UPDATE-FixedTheMentionedBug.mp4`) that demos a feature we fixed in time after having temporarily disabled it for our first video due to a bug that
+we weren't sure we'd fix in time! Note that the module package has also been updated with this fix. 
