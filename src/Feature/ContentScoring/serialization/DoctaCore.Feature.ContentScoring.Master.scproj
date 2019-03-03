@@ -27,6 +27,16 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <PackageName>Hackathon2019.DoctaScore</PackageName>
+    <PackageAuthor>DoctaCore</PackageAuthor>
+    <PackagePublisher>DoctaCore</PackagePublisher>
+    <PackageVersion>1.0</PackageVersion>
+    <PackageReadme />
+    <SitecoreAssemblyPath />
+    <GeneratePackage>True</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
@@ -114,6 +124,16 @@
       <ChildItemSynchronization>KeepAllChildrenSynchronized</ChildItemSynchronization>
       <ItemDeployment>AlwaysUpdate</ItemDeployment>
     </SitecoreItem>
+  </ItemGroup>
+  <ItemGroup>
+    <BundledProject Include="..\..\KeyPhraseExtraction\serialization\DoctaCore.Feature.KeyPhraseExtraction.Core\DoctaCore.Feature.KeyPhraseExtraction.Core.scproj">
+      <ProjectId>{287cd6d3-7ca0-475e-bed0-1f0f09b06b30}</ProjectId>
+    </BundledProject>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\KeyPhraseExtraction\serialization\DoctaCore.Feature.KeyPhraseExtraction.Core\DoctaCore.Feature.KeyPhraseExtraction.Core.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>

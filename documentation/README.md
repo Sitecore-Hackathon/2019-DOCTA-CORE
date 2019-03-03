@@ -33,8 +33,8 @@ Additionally, in order to use Docta Score right away, you will need to have some
 
 Perform the following steps to install the module:
 
-1. Use the Sitecore Installation Wizard to install the [package](#link-to-package)
-2. (Optional) Use the Sitecore Installation Wizard to install the [demo package](#link-to-demo-package)
+1. Use the Sitecore Installation Wizard to install the module package (\sc.package\Hackathon2019.DoctaScore.update)
+2. (Optional) Use the Sitecore Installation Wizard to install the demo (\sc.package\Hackathon2019.DoctaScore.Demo.update)
 3. (Not optional) Smile for the Docta!
 
 ## Configuration

@@ -33,6 +33,16 @@
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>.\bin\Debug\</OutputPath>
     <RecursiveDeployAction>Ignore</RecursiveDeployAction>
+    <PackageName>Hackathon2019.DoctaScore.Demo</PackageName>
+    <PackageAuthor>DoctaCore</PackageAuthor>
+    <PackagePublisher>DoctaCore</PackagePublisher>
+    <PackageVersion>1.0</PackageVersion>
+    <PackageReadme />
+    <SitecoreAssemblyPath />
+    <GeneratePackage>True</GeneratePackage>
+    <SeperateFilesAndItems>False</SeperateFilesAndItems>
+    <PackageExcludeCode>False</PackageExcludeCode>
+    <AddDateTimeToPackageName>False</AddDateTimeToPackageName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <DebugSymbols>false</DebugSymbols>
@@ -226,6 +236,14 @@
       <Project>{e0a6a6de-53a1-4b38-a225-283e03835589}</Project>
       <Name>DoctaCore.Project.Demo</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DoctaCore.Project.Demo.Content\DoctaCore.Project.Demo.Content.scproj">
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundledProject Include="..\DoctaCore.Project.Demo.Content\DoctaCore.Project.Demo.Content.scproj">
+      <ProjectId>{7958d375-57f4-4d54-9208-8d1cf6a5f72d}</ProjectId>
+    </BundledProject>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets" Condition="Exists('$(MSBuildExtensionsPath)\HedgehogDevelopment\SitecoreProject\v9.0\HedgehogDevelopment.SitecoreProject.targets')" />
 </Project>
