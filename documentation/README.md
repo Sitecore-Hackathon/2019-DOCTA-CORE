@@ -59,12 +59,13 @@ In order to enable the application to connect with Azure Cognitive Services. The
 </configuration>
 ```
 
-###Azure Conginitive Services Subscription
+### Azure Conginitive Services Subscription
 The solution currently supports integration with Azure Cognitive Services' Text Analytics API for Machine Learning and more specifically the Key Phrase Extraction app.
 Here are the steps to provision the service
 1. Log into https://portal.azure.com with a valid microsoft account
 2. Click on "Create a Resource" in the left rail to add a new resource to your subscrption.
 3. Search for "Text Analytics" and click on "Create" at the bottom of the selected resource once it shows "Text Analytics" in the drop down under "Select a software plan"
+
     3.1 In the "Name" field, enter a valid value
     3.2 In the "Subscription" field select a valid subscription.
     3.3 For "Location" pick "West US" since this resource has limited availabilty regionally.
@@ -72,6 +73,7 @@ Here are the steps to provision the service
     3.5 For "Resource Group" either pick an existing one or create a new one by clicking on "Create New" and then click "Create" at the bottom to create the resource.
  
 Once the resource is created, you will need the following settings in your code:
+
 1. Click on "Overview" and copy the " Endpoint".
 2. Click on "Show Access Keys" link next to "Manage Keys" label and copy the "Key 1" value in your solution.
 3. Under the "Resource Management" in the left rail menu of the resource, click the "Quick Start" link and read the documentation on how to get started. Click on "API reference" link specifically which will give you sample code for C# and other programming languages. (https://westus.dev.cognitive.microsoft.com/docs/services/TextAnalytics.V2.0/operations/56f30ceeeda5650db055a3c7)
