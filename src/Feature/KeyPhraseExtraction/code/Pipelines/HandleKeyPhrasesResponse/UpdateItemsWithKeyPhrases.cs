@@ -6,6 +6,7 @@ using DoctaCore.Foundation.KeyPhrases.Pipelines.HandleKeyPhrasesResponse;
 using Sitecore.Abstractions;
 using Sitecore.Data;
 using Sitecore.Data.Items;
+using Sitecore.Diagnostics;
 using Sitecore.SecurityModel;
 
 namespace DoctaCore.Feature.KeyPhraseExtraction.Pipelines.HandleKeyPhrasesResponse
@@ -25,8 +26,9 @@ namespace DoctaCore.Feature.KeyPhraseExtraction.Pipelines.HandleKeyPhrasesRespon
 
         public void Process(HandleKeyPhrasesResponsePipelineArgs args)
         {
-            if (args.Collection == null || !args.Collection.Documents.Any())
+            if (args?.Collection?.Documents == null)
             {
+                Log.Warn($"UpdateItemsWithKeyPhrases skipped due to a null argument", this);
                 return;
             }
 
