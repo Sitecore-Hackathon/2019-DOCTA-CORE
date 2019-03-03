@@ -8,6 +8,7 @@ using DoctaCore.Foundation.KeyPhrases.Models;
 using DoctaCore.Foundation.KeyPhrases.Pipelines.HandleKeyPhrasesResponse;
 using Sitecore.Abstractions;
 using Sitecore.Data;
+using Sitecore.Diagnostics;
 using Sitecore.Pipelines;
 
 namespace DoctaCore.Feature.ContentScoring.Pipelines.HandleKeyPhrasesResponse
@@ -24,13 +25,19 @@ namespace DoctaCore.Feature.ContentScoring.Pipelines.HandleKeyPhrasesResponse
 
         public void Process(HandleKeyPhrasesResponsePipelineArgs args)
         {
+            if (args?.Collection?.Documents == null)
+            {
+                Log.Warn($"ScoreContentWithKeyPhrases skipped due to a null argument", this);
+                return;
+            }
+
             var database = _factory.GetDatabase("master"); // TODO: move this to config and inject
 
             foreach (var model in args.Collection.Documents)
             {
-                if (!ID.TryParse(model.ItemId, out var id))
+                if (!ID.TryParse(model.Id, out var id))
                 {
-                    return;
+                    continue;
                 }
 
                 var scoreContentArgs = new ScoreContentPipelineArgs()
