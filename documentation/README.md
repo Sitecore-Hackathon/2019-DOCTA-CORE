@@ -125,7 +125,7 @@ In order to add a new mapping, click the "Edit rule" link to open the Rule Edito
 
 ### Running Docta Score
 
-Once your mapping rules are all set up, log into Sitecore open up the Content Editor. Navigate in the tree to the top level (root) item that you wish to score content for, and click the "Analyze" tab at the top. In the "Attributes" section of the ribbon you will see a button with a "spider-web-like" icon, named "Score Content". Click on this item to start the process. 
+Once your mapping rules are all set up, log into Sitecore open up the Content Editor. DoctaCore will automatically score content for the currently selected item and all descendant items, so navigate in the tree to the top level (root) item that you wish to score content for, and click the "Analyze" tab at the top of the window. In the "Attributes" section of the ribbon you will see a button with a spider-web icon, named "Score Content". Click on this button to run DoctaScore! 
 
 **IMPORTANT:** It was our intent to add a <saveItem> processor for this item, as well to eliminate the need for manual execution steps. However, given the limited time that we have during hackathon to complete our module, we decided to keep the manual execution for now, and add automated execution to our backlog. 
 
